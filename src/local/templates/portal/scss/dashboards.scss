@@ -1,0 +1,33 @@
+.dashboard{
+    margin-top: 2.4rem;
+    padding: 2rem;
+    background-color: var(--white);
+    box-sizing: border-box;
+}
+.dashboard-areas-of-expertise{
+    display: grid;
+    grid-template-columns: 40.77% 32.65% 24.58%;
+    grid-gap: 1.6rem;
+    .dashboard-areas-of-expertise__cell{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.6rem;
+    }
+}
+
+.rid-direction-table{
+    th, td{
+        width: 33.33%;
+    }
+    tbody{
+        th{
+            font-size: 1.6rem;
+        }
+        td{
+            font-size: 1.8rem;
+            span{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

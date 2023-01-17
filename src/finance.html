@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Title here</title>
+
+	<!--   Cascading Style Sheets-->
+	<!-- <link rel="stylesheet" href="css/style.css">  -->
+	@@include('_link.html')
+</head>
+
+<body>
+
+	@@include('_header.html')
+	<main class="main">
+		<div class="main-content">
+			<a href="#" class="go-back-link">
+				<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M6.38016 3.95334L2.3335 8.00001L6.38016 12.0467" stroke="#8088A6" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M13.6668 8H2.44678" stroke="#8088A6" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg> 
+				<span>Вернуться назад</span>
+			</a>
+			<h1 class="page-title">
+				Политическое учение Фомы Аквинского традиционно иллюстрирует марксизм. Политическое учение Аристотеля сохраняет онтологический христианско-демократический национализм.
+			</h1>
+			<div class="control-panel">
+				@@include('_section-menu.html')
+				<button class="btn btn--with-elem show-modal" data-modal="add-fin">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M6 12H18" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M12 18V6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg> 
+					Добавить
+				</button> 
+				<!-- <a href="#" class="btn btn--with-elem">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M6 12H18" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M12 18V6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg> 
+					Добавить
+				</a> -->
+			</div>
+			<div class="table-box">
+				<table class="table finance-table">
+					<thead>
+						<tr>
+							<th>Наименование</th>
+							<th>Источник</th>
+							<th>План бюджета</th>
+							<th>Факт оплаты</th> 
+						</tr>
+					</thead> 
+					<tbody>
+						<tr>
+							<td>
+								<a href="#">Государственный заказ №100500 от 11.12.2022</a>
+							</td>
+							<td>Бюджетные средства</td>
+							<td>
+								10 000 000
+							</td>
+							<td>
+								2 000 000 (20%)
+								<div class="pie-chart" style="--percent: 20"></div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#">Государственный заказ №148874 от 09.12.2022</a>
+							</td>
+							<td>Бюджетные средства</td>
+							<td>
+								10 000 000
+							</td>
+							<td>
+								2 000 000 (50%)
+								<div class="pie-chart" style="--percent: 50"></div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#">Государственный заказ №189851 от 07.12.2022</a>
+							</td>
+							<td>Бюджетные средства</td>
+							<td>
+								10 000 000
+							</td>
+							<td>
+								2 000 000 (35%)
+								<div class="pie-chart" style="--percent: 35"></div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#">Государственный заказ №156989 от 10.10.2022</a>
+							</td>
+							<td>Внешние средства</td>
+							<td>
+								24 000 000
+							</td>
+							<td>
+								1 000 000 (75%)
+								<div class="pie-chart" style="--percent: 75"></div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#">Государственный заказ №100500 от 11.12.2022</a>
+							</td>
+							<td>Бюджетные средства</td>
+							<td>
+								10 000 000
+							</td>
+							<td>
+								2 000 000 (20%)
+								<div class="pie-chart" style="--percent: 20"></div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#">Государственный заказ №148874 от 09.12.2022</a>
+							</td>
+							<td>Бюджетные средства</td>
+							<td>
+								10 000 000
+							</td>
+							<td>
+								2 000 000 (50%)
+								<div class="pie-chart" style="--percent: 50"></div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#">Государственный заказ №189851 от 07.12.2022</a>
+							</td>
+							<td>Бюджетные средства</td>
+							<td>
+								10 000 000
+							</td>
+							<td>
+								2 000 000 (35%)
+								<div class="pie-chart" style="--percent: 35"></div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#">Государственный заказ №156989 от 10.10.2022</a>
+							</td>
+							<td>Внешние средства</td>
+							<td>
+								24 000 000
+							</td>
+							<td>
+								1 000 000 (75%)
+								<div class="pie-chart" style="--percent: 75"></div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#">Государственный заказ №100500 от 11.12.2022</a>
+							</td>
+							<td>Бюджетные средства</td>
+							<td>
+								10 000 000
+							</td>
+							<td>
+								2 000 000 (20%)
+								<div class="pie-chart" style="--percent: 20"></div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#">Государственный заказ №148874 от 09.12.2022</a>
+							</td>
+							<td>Бюджетные средства</td>
+							<td>
+								10 000 000
+							</td>
+							<td>
+								2 000 000 (50%)
+								<div class="pie-chart" style="--percent: 50"></div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#">Государственный заказ №189851 от 07.12.2022</a>
+							</td>
+							<td>Бюджетные средства</td>
+							<td>
+								10 000 000
+							</td>
+							<td>
+								2 000 000 (35%)
+								<div class="pie-chart" style="--percent: 35"></div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#">Государственный заказ №156989 от 10.10.2022</a>
+							</td>
+							<td>Внешние средства</td>
+							<td>
+								24 000 000
+							</td>
+							<td>
+								1 000 000 (75%)
+								<div class="pie-chart" style="--percent: 75"></div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<ul class="pagination">
+				<li>
+					<span>
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M12.5 16.6L7.0667 11.1667C6.42503 10.525 6.42503 9.47503 7.0667 8.83336L12.5 3.40002" stroke="#D0D4E2" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg> 
+					</span>
+				</li>
+				<li>
+					<a href="#" class="active">1</a>
+				</li>
+				<li>
+					<a href="#">2</a>
+				</li>
+				<li>
+					<a href="#">3</a>
+				</li>
+				<li>
+					<a href="#">4</a>
+				</li>
+				<li>
+					<a href="#">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M7.4248 16.6L12.8581 11.1667C13.4998 10.525 13.4998 9.47503 12.8581 8.83336L7.4248 3.40002" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg> 
+					</a>
+				</li>
+			</ul>
+			  
+		</div> 
+	</main>
+	@@include('_footer.html')
+	<div class="great-shadow"></div>
+	<div class="right-modal add-fin ">
+		<button class="close-modal-btn">
+			<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M8.99333 8.995L1 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M8.99106 1.00351L1.00439 8.99018" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg> 
+		</button>
+		<div class="right-modal__content">
+			<h2>Добавить финансирование</h2> 
+			<form class="form add-fin-form">
+				<label class="form-elem">
+					<div class="form-elem__caption">Название источника <sub class="f-red">*</sub></div>
+					<input type="text" name="name" autocomplete="off" placeholder="Введите название...">
+				</label>
+				<div class="select-wr">
+					<div class="select-caption">Источник финансирования <sub class="f-red">*</sub></div>
+					<label class="form-elem-select">
+						<select class="form-elem-select__item form-elem-select__item--no-search" name="areas-of-expertise">
+							<option value="">Выберите источник финансирования</option>
+							<option value="1">Частный</option>
+							<option value="2">Государственный</option>
+							<option value="3">Смешанный</option>
+							<option value="4">Тайные организации</option>
+						</select>
+						<!-- <span class="form-elem__caption">Выберите источник финансирования</span> -->
+					</label>
+				</div>
+				<div class="columns-box columns-box--two-col">
+					<label class="form-elem">
+						<div class="form-elem__caption">План бюджета <sub class="f-red">*</sub></div>
+						<input type="text" name="name" autocomplete="off" placeholder="Введите число...">
+					</label>
+					<label class="form-elem">
+						<div class="form-elem__caption">Факт оплаты <sub class="f-red">*</sub></div>
+						<input type="text" name="name" autocomplete="off" placeholder="Введите число...">
+					</label>
+				</div> 
+				<div class="form-footer columns-box columns-box--two-col">   
+					<button class="btn bold">Опубликовать новость</button>
+					<button class="btn bold btn--cancel">Отменить</button>
+				</div>
+			</form>
+		</div> 
+	</div>
+	 
+	<!-- ++++++++++JavaScript++++++++++-->
+	@@include('_scripts.html')
+	<!-- ++++++++++JavaScript end++++++++++-->
+</body>
+
+</html>

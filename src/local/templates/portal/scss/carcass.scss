@@ -1,0 +1,36 @@
+.main{ 
+}
+.main-content{
+    position: relative;
+    // max-width: 98%;
+    margin: 0 auto;
+    padding-right: 80px;
+    padding-left: 260px;
+    padding-bottom: 3rem;
+    overflow: hidden; 
+    
+}
+.left-side{ 
+    position: relative;
+    border-left: 1px solid #E9ECFA;
+    width: 80px;
+    padding-top: 1.4rem;
+    
+}
+.bell-btn{
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.columns-box{
+    display: grid;
+    grid-gap: 2.4rem;
+    &--two-col{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

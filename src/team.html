@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Title here</title>
+
+	<!--   Cascading Style Sheets-->
+	<!-- <link rel="stylesheet" href="css/style.css">  -->
+	@@include('_link.html')
+</head>
+
+<body>
+
+	@@include('_header.html')
+	<main class="main">
+		<div class="main-content">
+			<a href="#" class="go-back-link">
+				<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M6.38016 3.95334L2.3335 8.00001L6.38016 12.0467" stroke="#8088A6" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M13.6668 8H2.44678" stroke="#8088A6" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg> 
+				<span>Вернуться назад</span>
+			</a>
+			<h1 class="page-title">
+				Политическое учение Фомы Аквинского традиционно иллюстрирует марксизм. Политическое учение Аристотеля сохраняет онтологический христианско-демократический национализм.
+			</h1>
+			<div class="control-panel">
+				@@include('_section-menu.html')  
+			</div>
+			<div class="control-panel"> 
+				<form class="form-table-filter">
+					<label class="rachek-btn">
+						<input type="checkbox" name="all-employees"  checked>
+						<span class="rachek-btn__caption">
+							Все сотрудники <span class="f-red">16</span><span class="f-dark-blue">/18</span>
+						</span> 
+					</label>
+					<label class="rachek-btn">
+						<input type="checkbox" name="boss">
+						<span class="rachek-btn__caption">
+							Руководитель <span class="f-red">1</span><span class="f-dark-blue">/2</span>
+						</span> 
+					</label>
+					<label class="rachek-btn">
+						<input type="radio" name="key-employees ">
+						<span class="rachek-btn__caption">
+							Ключевые сотрудники  <span class="f-green">6</span><span class="f-green">/6</span>
+						</span> 
+					</label>
+					<label class="rachek-btn">
+						<input type="radio" name="key-employees ">
+						<span class="rachek-btn__caption">
+							Рядовые сотрудники <span class="f-red">9</span><span class="f-dark-blue">/10</span>
+						</span> 
+					</label>
+				</form>
+				<button class="btn btn--with-elem">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M6 12H18" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M12 18V6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg> 
+					Добавить
+				</button>  
+			</div>
+			<div class="table-box">
+				<table class="table team-table">
+					<thead>
+						<tr>
+							<th>Должность</th>
+							<th>Телефон</th>
+							<th>E-mail</th>  
+						</tr>
+					</thead> 
+					<tbody>
+						<tr>
+							<td>
+								<div class="team-table__item">
+									<span class="team-member-position">
+										Руководитель
+									</span>
+									<div class="team-member">
+										<div class="team-member__avatar">
+											<img src="local/templates/portal/image/konstantinopolsky.jpg" alt="Константинопольский Константин Константинович">
+										</div>
+										<span class="team-member__name">
+											Константинопольский Константин Константинович
+										</span>
+									</div>
+								</div> 
+							</td>
+							<td>
+								+7 (999) 123 45 67
+							</td>
+							<td>
+								<a href="mailto:Konstantinopolskii@gmail.com" class="team-table__mail">Konstantinopolskii@gmail.com</a>
+								<button class="inner-table-btn show-modal" data-modal="trl21592">Наукометрия</button>
+								<a href="#" class="inner-table-btn">Репозиторий</a>
+								<button class="trachcan-btn">
+									<svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path opacity="0.4" d="M14.3691 6.90702C14.3691 6.96368 13.925 12.581 13.6713 14.9451C13.5125 16.3959 12.5772 17.2758 11.1743 17.3008C10.0964 17.325 9.04118 17.3333 8.00298 17.3333C6.90076 17.3333 5.82284 17.325 4.77654 17.3008C3.42064 17.2683 2.48456 16.3709 2.33381 14.9451C2.07284 12.5727 1.63682 6.96368 1.62871 6.90702C1.62061 6.73619 1.67572 6.5737 1.78756 6.44203C1.89778 6.32037 2.05663 6.24704 2.22359 6.24704H13.7824C13.9485 6.24704 14.0993 6.32037 14.2184 6.44203C14.3294 6.5737 14.3854 6.73619 14.3691 6.90702" fill="#1074BC"/>
+										<path d="M15.5 3.98071C15.5 3.63822 15.2301 3.3699 14.9059 3.3699H12.4762C11.9818 3.3699 11.5522 3.01824 11.442 2.52242L11.3059 1.91495C11.1154 1.18081 10.4581 0.666656 9.72061 0.666656H6.2802C5.53458 0.666656 4.88378 1.18081 4.68603 1.95494L4.55879 2.52326C4.44775 3.01824 4.01821 3.3699 3.52464 3.3699H1.09488C0.769883 3.3699 0.5 3.63822 0.5 3.98071V4.29736C0.5 4.63152 0.769883 4.90817 1.09488 4.90817H14.9059C15.2301 4.90817 15.5 4.63152 15.5 4.29736V3.98071Z" fill="#1074BC"/>
+									</svg> 
+								</button>
+							</td> 
+						</tr>
+						<tr>
+							<td>
+								<div class="team-table__item">
+									<span class="team-member-position">
+										Ключевой сотрудник
+									</span>
+									<div class="team-member">
+										<div class="team-member__avatar">
+											<img src="local/templates/portal/image/rain.jpg" alt="Субботин Бенедикт Тарасович">
+										</div>
+										<span class="team-member__name">
+											Субботин Бенедикт Тарасович
+										</span>
+									</div>
+								</div>
+								
+								
+							</td>
+							<td>
+								+7 (999) 123 13 84
+							</td>
+							<td>
+								<a href="mailto:Konstantinopolskii@gmail.com" class="team-table__mail">rain@gmail.com</a>
+								<button class="inner-table-btn show-modal" data-modal="trl21593">Наукометрия</button>
+								<a href="#" class="inner-table-btn">Репозиторий</a>
+								<button class="trachcan-btn">
+									<svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path opacity="0.4" d="M14.3691 6.90702C14.3691 6.96368 13.925 12.581 13.6713 14.9451C13.5125 16.3959 12.5772 17.2758 11.1743 17.3008C10.0964 17.325 9.04118 17.3333 8.00298 17.3333C6.90076 17.3333 5.82284 17.325 4.77654 17.3008C3.42064 17.2683 2.48456 16.3709 2.33381 14.9451C2.07284 12.5727 1.63682 6.96368 1.62871 6.90702C1.62061 6.73619 1.67572 6.5737 1.78756 6.44203C1.89778 6.32037 2.05663 6.24704 2.22359 6.24704H13.7824C13.9485 6.24704 14.0993 6.32037 14.2184 6.44203C14.3294 6.5737 14.3854 6.73619 14.3691 6.90702" fill="#1074BC"/>
+										<path d="M15.5 3.98071C15.5 3.63822 15.2301 3.3699 14.9059 3.3699H12.4762C11.9818 3.3699 11.5522 3.01824 11.442 2.52242L11.3059 1.91495C11.1154 1.18081 10.4581 0.666656 9.72061 0.666656H6.2802C5.53458 0.666656 4.88378 1.18081 4.68603 1.95494L4.55879 2.52326C4.44775 3.01824 4.01821 3.3699 3.52464 3.3699H1.09488C0.769883 3.3699 0.5 3.63822 0.5 3.98071V4.29736C0.5 4.63152 0.769883 4.90817 1.09488 4.90817H14.9059C15.2301 4.90817 15.5 4.63152 15.5 4.29736V3.98071Z" fill="#1074BC"/>
+									</svg> 
+								</button>
+							</td> 
+						</tr>
+						<tr>
+							<td>
+								<div class="team-table__item">
+									<span class="team-member-position">
+										Ключевой сотрудник
+									</span>
+									<div class="team-member">
+										<div class="team-member__avatar">
+											<img src="local/templates/portal/image/arny.jpg" alt="Кабанов Осип Александрович">
+										</div>
+										<span class="team-member__name">
+											Кабанов Осип Александрович
+										</span>
+									</div>
+								</div> 
+							</td>
+							<td>
+								+7 (999) 584 12 58
+							</td>
+							<td>
+								<a href="mailto:kabanos@yandex.ru" class="team-table__mail">kabanos@yandex.ru</a>
+								<button class="inner-table-btn">Наукометрия</button>
+								<a href="#" class="inner-table-btn">Репозиторий</a>
+								<button class="trachcan-btn">
+									<svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path opacity="0.4" d="M14.3691 6.90702C14.3691 6.96368 13.925 12.581 13.6713 14.9451C13.5125 16.3959 12.5772 17.2758 11.1743 17.3008C10.0964 17.325 9.04118 17.3333 8.00298 17.3333C6.90076 17.3333 5.82284 17.325 4.77654 17.3008C3.42064 17.2683 2.48456 16.3709 2.33381 14.9451C2.07284 12.5727 1.63682 6.96368 1.62871 6.90702C1.62061 6.73619 1.67572 6.5737 1.78756 6.44203C1.89778 6.32037 2.05663 6.24704 2.22359 6.24704H13.7824C13.9485 6.24704 14.0993 6.32037 14.2184 6.44203C14.3294 6.5737 14.3854 6.73619 14.3691 6.90702" fill="#1074BC"/>
+										<path d="M15.5 3.98071C15.5 3.63822 15.2301 3.3699 14.9059 3.3699H12.4762C11.9818 3.3699 11.5522 3.01824 11.442 2.52242L11.3059 1.91495C11.1154 1.18081 10.4581 0.666656 9.72061 0.666656H6.2802C5.53458 0.666656 4.88378 1.18081 4.68603 1.95494L4.55879 2.52326C4.44775 3.01824 4.01821 3.3699 3.52464 3.3699H1.09488C0.769883 3.3699 0.5 3.63822 0.5 3.98071V4.29736C0.5 4.63152 0.769883 4.90817 1.09488 4.90817H14.9059C15.2301 4.90817 15.5 4.63152 15.5 4.29736V3.98071Z" fill="#1074BC"/>
+									</svg> 
+								</button>
+							</td>  
+						</tr>
+						<tr>
+							<td>
+								<div class="team-table__item">
+									<span class="team-member-position">
+										Ключевой сотрудник
+									</span>
+									<div class="team-member">
+										<div class="team-member__avatar">
+											<img src="local/templates/portal/image/workboss.jpg" alt="Афанасьева Евгения Андреевна">
+										</div>
+										<span class="team-member__name">
+											Афанасьева Евгения Андреевна
+										</span>
+									</div>
+								</div> 
+							</td>
+							<td>
+								+7 (999) 584 79 12
+							</td>
+							<td>
+								<a href="mailto:afonya@yandex.ru" class="team-table__mail">afonya@yandex.ru</a>
+								<button class="inner-table-btn">Наукометрия</button>
+								<a href="#" class="inner-table-btn">Репозиторий</a>
+								<button class="trachcan-btn">
+									<svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path opacity="0.4" d="M14.3691 6.90702C14.3691 6.96368 13.925 12.581 13.6713 14.9451C13.5125 16.3959 12.5772 17.2758 11.1743 17.3008C10.0964 17.325 9.04118 17.3333 8.00298 17.3333C6.90076 17.3333 5.82284 17.325 4.77654 17.3008C3.42064 17.2683 2.48456 16.3709 2.33381 14.9451C2.07284 12.5727 1.63682 6.96368 1.62871 6.90702C1.62061 6.73619 1.67572 6.5737 1.78756 6.44203C1.89778 6.32037 2.05663 6.24704 2.22359 6.24704H13.7824C13.9485 6.24704 14.0993 6.32037 14.2184 6.44203C14.3294 6.5737 14.3854 6.73619 14.3691 6.90702" fill="#1074BC"/>
+										<path d="M15.5 3.98071C15.5 3.63822 15.2301 3.3699 14.9059 3.3699H12.4762C11.9818 3.3699 11.5522 3.01824 11.442 2.52242L11.3059 1.91495C11.1154 1.18081 10.4581 0.666656 9.72061 0.666656H6.2802C5.53458 0.666656 4.88378 1.18081 4.68603 1.95494L4.55879 2.52326C4.44775 3.01824 4.01821 3.3699 3.52464 3.3699H1.09488C0.769883 3.3699 0.5 3.63822 0.5 3.98071V4.29736C0.5 4.63152 0.769883 4.90817 1.09488 4.90817H14.9059C15.2301 4.90817 15.5 4.63152 15.5 4.29736V3.98071Z" fill="#1074BC"/>
+									</svg> 
+								</button>
+							</td>  
+						</tr>
+						<tr>
+							<td>
+								<div class="team-table__item">
+									<span class="team-member-position">
+										Рядовой сотрудник
+									</span>
+									<div class="team-member">
+										<div class="team-member__avatar">
+											<img src="local/templates/portal/image/musteacher.jpg" alt="Макарова Настасья Петровна">
+										</div>
+										<span class="team-member__name">
+											Макарова Настасья Петровна
+										</span>
+									</div>
+								</div> 
+							</td>
+							<td>
+								+7 (999) 555 57 14
+							</td>
+							<td>
+								<a href="mailto:makarova@yandex.ru" class="team-table__mail">makarova@yandex.ru</a>
+								<button class="inner-table-btn">Наукометрия</button>
+								<a href="#" class="inner-table-btn">Репозиторий</a>
+								<button class="trachcan-btn">
+									<svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path opacity="0.4" d="M14.3691 6.90702C14.3691 6.96368 13.925 12.581 13.6713 14.9451C13.5125 16.3959 12.5772 17.2758 11.1743 17.3008C10.0964 17.325 9.04118 17.3333 8.00298 17.3333C6.90076 17.3333 5.82284 17.325 4.77654 17.3008C3.42064 17.2683 2.48456 16.3709 2.33381 14.9451C2.07284 12.5727 1.63682 6.96368 1.62871 6.90702C1.62061 6.73619 1.67572 6.5737 1.78756 6.44203C1.89778 6.32037 2.05663 6.24704 2.22359 6.24704H13.7824C13.9485 6.24704 14.0993 6.32037 14.2184 6.44203C14.3294 6.5737 14.3854 6.73619 14.3691 6.90702" fill="#1074BC"/>
+										<path d="M15.5 3.98071C15.5 3.63822 15.2301 3.3699 14.9059 3.3699H12.4762C11.9818 3.3699 11.5522 3.01824 11.442 2.52242L11.3059 1.91495C11.1154 1.18081 10.4581 0.666656 9.72061 0.666656H6.2802C5.53458 0.666656 4.88378 1.18081 4.68603 1.95494L4.55879 2.52326C4.44775 3.01824 4.01821 3.3699 3.52464 3.3699H1.09488C0.769883 3.3699 0.5 3.63822 0.5 3.98071V4.29736C0.5 4.63152 0.769883 4.90817 1.09488 4.90817H14.9059C15.2301 4.90817 15.5 4.63152 15.5 4.29736V3.98071Z" fill="#1074BC"/>
+									</svg> 
+								</button>
+							</td>  
+						</tr>
+						<tr>
+							<td>
+								<div class="team-table__item">
+									<span class="team-member-position">
+										Рядовой сотрудник
+									</span>
+									<div class="team-member">
+										<div class="team-member__avatar"> 
+										</div>
+										<span class="team-member__name">
+											Иванов Иван Иванович
+										</span>
+									</div>
+								</div> 
+							</td>
+							<td>
+								+7 (999) 555 57 14
+							</td>
+							<td>
+								<a href="mailto:ivanos@yandex.ru" class="team-table__mail">ivanos@yandex.ru</a>
+								<button class="inner-table-btn">Наукометрия</button>
+								<a href="#" class="inner-table-btn">Репозиторий</a>
+								<button class="trachcan-btn">
+									<svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path opacity="0.4" d="M14.3691 6.90702C14.3691 6.96368 13.925 12.581 13.6713 14.9451C13.5125 16.3959 12.5772 17.2758 11.1743 17.3008C10.0964 17.325 9.04118 17.3333 8.00298 17.3333C6.90076 17.3333 5.82284 17.325 4.77654 17.3008C3.42064 17.2683 2.48456 16.3709 2.33381 14.9451C2.07284 12.5727 1.63682 6.96368 1.62871 6.90702C1.62061 6.73619 1.67572 6.5737 1.78756 6.44203C1.89778 6.32037 2.05663 6.24704 2.22359 6.24704H13.7824C13.9485 6.24704 14.0993 6.32037 14.2184 6.44203C14.3294 6.5737 14.3854 6.73619 14.3691 6.90702" fill="#1074BC"/>
+										<path d="M15.5 3.98071C15.5 3.63822 15.2301 3.3699 14.9059 3.3699H12.4762C11.9818 3.3699 11.5522 3.01824 11.442 2.52242L11.3059 1.91495C11.1154 1.18081 10.4581 0.666656 9.72061 0.666656H6.2802C5.53458 0.666656 4.88378 1.18081 4.68603 1.95494L4.55879 2.52326C4.44775 3.01824 4.01821 3.3699 3.52464 3.3699H1.09488C0.769883 3.3699 0.5 3.63822 0.5 3.98071V4.29736C0.5 4.63152 0.769883 4.90817 1.09488 4.90817H14.9059C15.2301 4.90817 15.5 4.63152 15.5 4.29736V3.98071Z" fill="#1074BC"/>
+									</svg> 
+								</button>
+							</td>  
+						</tr>
+						<tr>
+							<td>
+								<div class="team-table__item">
+									<span class="team-member-position">
+										Рядовой сотрудник
+									</span>
+									<div class="team-member">
+										<div class="team-member__avatar"> 
+										</div>
+										<span class="team-member__name">
+											Сидоров Сидр Сидорович
+										</span>
+									</div>
+								</div> 
+							</td>
+							<td>
+								+7 (999) 549 15 78
+							</td>
+							<td>
+								<a href="mailto:sidor@yandex.ru" class="team-table__mail">sidor@yandex.ru</a>
+								<button class="inner-table-btn">Наукометрия</button>
+								<a href="#" class="inner-table-btn">Репозиторий</a>
+								<button class="trachcan-btn">
+									<svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path opacity="0.4" d="M14.3691 6.90702C14.3691 6.96368 13.925 12.581 13.6713 14.9451C13.5125 16.3959 12.5772 17.2758 11.1743 17.3008C10.0964 17.325 9.04118 17.3333 8.00298 17.3333C6.90076 17.3333 5.82284 17.325 4.77654 17.3008C3.42064 17.2683 2.48456 16.3709 2.33381 14.9451C2.07284 12.5727 1.63682 6.96368 1.62871 6.90702C1.62061 6.73619 1.67572 6.5737 1.78756 6.44203C1.89778 6.32037 2.05663 6.24704 2.22359 6.24704H13.7824C13.9485 6.24704 14.0993 6.32037 14.2184 6.44203C14.3294 6.5737 14.3854 6.73619 14.3691 6.90702" fill="#1074BC"/>
+										<path d="M15.5 3.98071C15.5 3.63822 15.2301 3.3699 14.9059 3.3699H12.4762C11.9818 3.3699 11.5522 3.01824 11.442 2.52242L11.3059 1.91495C11.1154 1.18081 10.4581 0.666656 9.72061 0.666656H6.2802C5.53458 0.666656 4.88378 1.18081 4.68603 1.95494L4.55879 2.52326C4.44775 3.01824 4.01821 3.3699 3.52464 3.3699H1.09488C0.769883 3.3699 0.5 3.63822 0.5 3.98071V4.29736C0.5 4.63152 0.769883 4.90817 1.09488 4.90817H14.9059C15.2301 4.90817 15.5 4.63152 15.5 4.29736V3.98071Z" fill="#1074BC"/>
+									</svg> 
+								</button>
+							</td>  
+						</tr>
+						<tr>
+							<td>
+								<div class="team-table__item">
+									<span class="team-member-position">
+										Рядовой сотрудник
+									</span>
+									<div class="team-member">
+										<div class="team-member__avatar"> 
+										</div>
+										<span class="team-member__name">
+											Петров Петр Петрович
+										</span>
+									</div>
+								</div> 
+							</td>
+							<td>
+								+7 (999) 521 65 28
+							</td>
+							<td>
+								<a href="mailto:perorus@yandex.ru" class="team-table__mail">perorus@yandex.ru</a>
+								<button class="inner-table-btn">Наукометрия</button>
+								<a href="#" class="inner-table-btn">Репозиторий</a>
+								<button class="trachcan-btn">
+									<svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path opacity="0.4" d="M14.3691 6.90702C14.3691 6.96368 13.925 12.581 13.6713 14.9451C13.5125 16.3959 12.5772 17.2758 11.1743 17.3008C10.0964 17.325 9.04118 17.3333 8.00298 17.3333C6.90076 17.3333 5.82284 17.325 4.77654 17.3008C3.42064 17.2683 2.48456 16.3709 2.33381 14.9451C2.07284 12.5727 1.63682 6.96368 1.62871 6.90702C1.62061 6.73619 1.67572 6.5737 1.78756 6.44203C1.89778 6.32037 2.05663 6.24704 2.22359 6.24704H13.7824C13.9485 6.24704 14.0993 6.32037 14.2184 6.44203C14.3294 6.5737 14.3854 6.73619 14.3691 6.90702" fill="#1074BC"/>
+										<path d="M15.5 3.98071C15.5 3.63822 15.2301 3.3699 14.9059 3.3699H12.4762C11.9818 3.3699 11.5522 3.01824 11.442 2.52242L11.3059 1.91495C11.1154 1.18081 10.4581 0.666656 9.72061 0.666656H6.2802C5.53458 0.666656 4.88378 1.18081 4.68603 1.95494L4.55879 2.52326C4.44775 3.01824 4.01821 3.3699 3.52464 3.3699H1.09488C0.769883 3.3699 0.5 3.63822 0.5 3.98071V4.29736C0.5 4.63152 0.769883 4.90817 1.09488 4.90817H14.9059C15.2301 4.90817 15.5 4.63152 15.5 4.29736V3.98071Z" fill="#1074BC"/>
+									</svg> 
+								</button>
+							</td>  
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div> 
+	</main>
+	@@include('_footer.html')
+	<div class="great-shadow"></div>
+	<div class="right-modal scientometrics trl21592">
+		<button class="close-modal-btn">
+			<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M8.99333 8.995L1 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M8.99106 1.00351L1.00439 8.99018" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg> 
+		</button>
+		<div class="right-modal__content">
+			 <div class="employee-card clearfix">
+				<div class="employee-card__avatar">
+					<img src="local/templates/portal/image/konstantinopolsky.jpg" alt="Константинопольский Константин Константинович">
+				</div>
+				<div class="employee-card__info">
+					<h2 class="employee-card__name">Константинопольский Константин Константинович</h2>
+					<span class="employee-card__regalia">
+						профессор (центр "цифрового биодизайна и персонализированного здравоохранения"), директор (научно-технологический парк биомедицины)
+					</span> 
+					<div class="employee-card__parameter-box">
+						<div class="employee-parameter">
+							<span class="employee-parameter__key">Дата рождения</span>
+							<span class="employee-parameter__value">21.09.1989</span>
+						</div>
+						<div class="employee-parameter">
+							<span class="employee-parameter__key">Звание</span>
+							<span class="employee-parameter__value">доцент (2021 г.)</span>
+						</div>
+						<div class="employee-parameter">
+							<span class="employee-parameter__key">Учёная степень</span>
+							<span class="employee-parameter__value">доктор химических наук (2016 г.)</span>
+						</div>
+					</div>
+				</div>
+				
+			 </div>
+			 <div class="charts-box">
+				<div class="charts">
+					<h3 class="charts__name">
+						Публикации в периодических изданиях 
+					</h3>
+					<img src="local/templates/portal/image/chart-1.png" alt="" class="spacer">
+				</div>
+				<div class="charts">
+					<h3 class="charts__name">
+						Объекты интеллектуальной собственности
+					</h3>
+					<img src="local/templates/portal/image/chart-2.png" alt="" class="spacer">
+				</div>
+				<div class="charts">
+					<h3 class="charts__name">
+						Публикации в книгах, сборниках и пр.
+					</h3>
+					<img src="local/templates/portal/image/chart-3.png" alt="" class="spacer">
+				</div>
+				<div class="charts">
+					<h3 class="charts__name">
+						Научные проекты
+					</h3>
+					<img src="local/templates/portal/image/chart-2.png" alt="" class="spacer">
+				</div>
+			 </div>
+			 <div class="spoiler">
+				<button class="spoiler__btn">
+					Публикационная активность
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M13.2797 5.99978L8.93306 10.3464C8.41973 10.8598 7.57973 10.8598 7.06639 10.3464L2.71973 5.99978" stroke="#0B123C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg> 
+				</button>
+				<div class="spoiler__content">
+					<div class="table-box">
+						<table class="table-zebra table-publications">
+							<thead>
+								<tr>
+									<th>Публикационная активность</th>
+									<th>За период</th>
+									<th>Всего</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Всего статей в научных журналах</td>
+									<td>188</td>
+									<td>198</td>
+								</tr>
+								<tr>
+									<td>WebOfScience</td>
+									<td>166</td>
+									<td>177</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q1</span></td>
+									<td>8</td>
+									<td>8</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q2</span></td>
+									<td>1</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q3</span></td>
+									<td>2</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q4</span></td>
+									<td>10</td>
+									<td>10</td>
+								</tr>
+								<tr>
+									<td>Scopus</td>
+									<td>166</td>
+									<td>177</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Top10</span></td>
+									<td>52</td>
+									<td>54</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q1</span></td>
+									<td>122</td>
+									<td>123</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q2</span></td>
+									<td>28</td>
+									<td>32</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			 </div>
+			 <div class="spoiler">
+				<button class="spoiler__btn">
+					Библиометрические показатели
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M13.2797 5.99978L8.93306 10.3464C8.41973 10.8598 7.57973 10.8598 7.06639 10.3464L2.71973 5.99978" stroke="#0B123C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg> 
+				</button>
+				<div class="spoiler__content">
+					<div class="table-box">
+						<table class="table-zebra table-publications">
+							<thead>
+								<tr>
+									<th>Библиометрические показатели</th>
+									<th>За период</th>
+									<th>Всего</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Всего статей в научных журналах</td>
+									<td>188</td>
+									<td>198</td>
+								</tr>
+								<tr>
+									<td>WebOfScience</td>
+									<td>166</td>
+									<td>177</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q1</span></td>
+									<td>8</td>
+									<td>8</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q2</span></td>
+									<td>1</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q3</span></td>
+									<td>2</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q4</span></td>
+									<td>10</td>
+									<td>10</td>
+								</tr>
+								<tr>
+									<td>Scopus</td>
+									<td>166</td>
+									<td>177</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Top10</span></td>
+									<td>52</td>
+									<td>54</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q1</span></td>
+									<td>122</td>
+									<td>123</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q2</span></td>
+									<td>28</td>
+									<td>32</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			 </div>
+			 <div class="spoiler">
+				<button class="spoiler__btn">
+					Научные проекты
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M13.2797 5.99978L8.93306 10.3464C8.41973 10.8598 7.57973 10.8598 7.06639 10.3464L2.71973 5.99978" stroke="#0B123C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg> 
+				</button>
+				<div class="spoiler__content">
+					<div class="table-box">
+						<table class="table-zebra table-publications">
+							<thead>
+								<tr>
+									<th>Научные проекты</th>
+									<th>За период</th>
+									<th>Всего</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Всего статей в научных журналах</td>
+									<td>188</td>
+									<td>198</td>
+								</tr>
+								<tr>
+									<td>WebOfScience</td>
+									<td>166</td>
+									<td>177</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q1</span></td>
+									<td>8</td>
+									<td>8</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q2</span></td>
+									<td>1</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q3</span></td>
+									<td>2</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q4</span></td>
+									<td>10</td>
+									<td>10</td>
+								</tr>
+								<tr>
+									<td>Scopus</td>
+									<td>166</td>
+									<td>177</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Top10</span></td>
+									<td>52</td>
+									<td>54</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q1</span></td>
+									<td>122</td>
+									<td>123</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q2</span></td>
+									<td>28</td>
+									<td>32</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			 </div>
+			 <div class="spoiler">
+				<button class="spoiler__btn">
+					Расшифровки данных публикационной активности
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M13.2797 5.99978L8.93306 10.3464C8.41973 10.8598 7.57973 10.8598 7.06639 10.3464L2.71973 5.99978" stroke="#0B123C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg> 
+				</button>
+				<div class="spoiler__content">
+					<div class="table-box">
+						<table class="table-zebra table-publications">
+							<thead>
+								<tr>
+									<th>Расшифровки данных публикационной активности</th>
+									<th>За период</th>
+									<th>Всего</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Всего статей в научных журналах</td>
+									<td>188</td>
+									<td>198</td>
+								</tr>
+								<tr>
+									<td>WebOfScience</td>
+									<td>166</td>
+									<td>177</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q1</span></td>
+									<td>8</td>
+									<td>8</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q2</span></td>
+									<td>1</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q3</span></td>
+									<td>2</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q4</span></td>
+									<td>10</td>
+									<td>10</td>
+								</tr>
+								<tr>
+									<td>Scopus</td>
+									<td>166</td>
+									<td>177</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Top10</span></td>
+									<td>52</td>
+									<td>54</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q1</span></td>
+									<td>122</td>
+									<td>123</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q2</span></td>
+									<td>28</td>
+									<td>32</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			 </div>
+
+		</div> 
+	</div>
+	<div class="right-modal scientometrics trl21593">
+		<button class="close-modal-btn">
+			<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M8.99333 8.995L1 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M8.99106 1.00351L1.00439 8.99018" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg> 
+		</button>
+		<div class="right-modal__content">
+			 <div class="employee-card clearfix">
+				<div class="employee-card__avatar">
+					<img src="local/templates/portal/image/rain.jpg" alt="Субботин Бенедикт Тарасович">
+				</div>
+				<div class="employee-card__info">
+					<h2 class="employee-card__name">Субботин Бенедикт Тарасович</h2>
+					<span class="employee-card__regalia">
+						профессор (центр "цифрового биодизайна и персонализированного здравоохранения"), директор (научно-технологический парк биомедицины)
+					</span> 
+					<div class="employee-card__parameter-box">
+						<div class="employee-parameter">
+							<span class="employee-parameter__key">Дата рождения</span>
+							<span class="employee-parameter__value">21.09.1988</span>
+						</div>
+						<div class="employee-parameter">
+							<span class="employee-parameter__key">Звание</span>
+							<span class="employee-parameter__value">Профессор (2019 г.)</span>
+						</div>
+						<div class="employee-parameter">
+							<span class="employee-parameter__key">Учёная степень</span>
+							<span class="employee-parameter__value">доктор очень точных наук (2018 г.)</span>
+						</div>
+					</div>
+				</div>
+				
+			 </div>
+			 <div class="charts-box">
+				<div class="charts">
+					<h3 class="charts__name">
+						Публикации в периодических изданиях 
+					</h3>
+					<img src="local/templates/portal/image/chart-1.png" alt="" class="spacer">
+				</div>
+				<div class="charts">
+					<h3 class="charts__name">
+						Объекты интеллектуальной собственности
+					</h3>
+					<img src="local/templates/portal/image/chart-2.png" alt="" class="spacer">
+				</div>
+				<div class="charts">
+					<h3 class="charts__name">
+						Публикации в книгах, сборниках и пр.
+					</h3>
+					<img src="local/templates/portal/image/chart-3.png" alt="" class="spacer">
+				</div>
+				<div class="charts">
+					<h3 class="charts__name">
+						Научные проекты
+					</h3>
+					<img src="local/templates/portal/image/chart-2.png" alt="" class="spacer">
+				</div>
+			 </div>
+			 <div class="spoiler">
+				<button class="spoiler__btn">
+					Публикационная активность
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M13.2797 5.99978L8.93306 10.3464C8.41973 10.8598 7.57973 10.8598 7.06639 10.3464L2.71973 5.99978" stroke="#0B123C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg> 
+				</button>
+				<div class="spoiler__content">
+					<div class="table-box">
+						<table class="table-zebra table-publications">
+							<thead>
+								<tr>
+									<th>Публикационная активность</th>
+									<th>За период</th>
+									<th>Всего</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Всего статей в научных журналах</td>
+									<td>188</td>
+									<td>198</td>
+								</tr>
+								<tr>
+									<td>WebOfScience</td>
+									<td>166</td>
+									<td>177</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q1</span></td>
+									<td>8</td>
+									<td>8</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q2</span></td>
+									<td>1</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q3</span></td>
+									<td>2</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q4</span></td>
+									<td>10</td>
+									<td>10</td>
+								</tr>
+								<tr>
+									<td>Scopus</td>
+									<td>166</td>
+									<td>177</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Top10</span></td>
+									<td>52</td>
+									<td>54</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q1</span></td>
+									<td>122</td>
+									<td>123</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q2</span></td>
+									<td>28</td>
+									<td>32</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			 </div>
+			 <div class="spoiler">
+				<button class="spoiler__btn">
+					Библиометрические показатели
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M13.2797 5.99978L8.93306 10.3464C8.41973 10.8598 7.57973 10.8598 7.06639 10.3464L2.71973 5.99978" stroke="#0B123C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg> 
+				</button>
+				<div class="spoiler__content">
+					<div class="table-box">
+						<table class="table-zebra table-publications">
+							<thead>
+								<tr>
+									<th>Библиометрические показатели</th>
+									<th>За период</th>
+									<th>Всего</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Всего статей в научных журналах</td>
+									<td>188</td>
+									<td>198</td>
+								</tr>
+								<tr>
+									<td>WebOfScience</td>
+									<td>166</td>
+									<td>177</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q1</span></td>
+									<td>8</td>
+									<td>8</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q2</span></td>
+									<td>1</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q3</span></td>
+									<td>2</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q4</span></td>
+									<td>10</td>
+									<td>10</td>
+								</tr>
+								<tr>
+									<td>Scopus</td>
+									<td>166</td>
+									<td>177</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Top10</span></td>
+									<td>52</td>
+									<td>54</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q1</span></td>
+									<td>122</td>
+									<td>123</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q2</span></td>
+									<td>28</td>
+									<td>32</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			 </div>
+			 <div class="spoiler">
+				<button class="spoiler__btn">
+					Научные проекты
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M13.2797 5.99978L8.93306 10.3464C8.41973 10.8598 7.57973 10.8598 7.06639 10.3464L2.71973 5.99978" stroke="#0B123C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg> 
+				</button>
+				<div class="spoiler__content">
+					<div class="table-box">
+						<table class="table-zebra table-publications">
+							<thead>
+								<tr>
+									<th>Научные проекты</th>
+									<th>За период</th>
+									<th>Всего</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Всего статей в научных журналах</td>
+									<td>188</td>
+									<td>198</td>
+								</tr>
+								<tr>
+									<td>WebOfScience</td>
+									<td>166</td>
+									<td>177</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q1</span></td>
+									<td>8</td>
+									<td>8</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q2</span></td>
+									<td>1</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q3</span></td>
+									<td>2</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q4</span></td>
+									<td>10</td>
+									<td>10</td>
+								</tr>
+								<tr>
+									<td>Scopus</td>
+									<td>166</td>
+									<td>177</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Top10</span></td>
+									<td>52</td>
+									<td>54</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q1</span></td>
+									<td>122</td>
+									<td>123</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q2</span></td>
+									<td>28</td>
+									<td>32</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			 </div>
+			 <div class="spoiler">
+				<button class="spoiler__btn">
+					Расшифровки данных публикационной активности
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M13.2797 5.99978L8.93306 10.3464C8.41973 10.8598 7.57973 10.8598 7.06639 10.3464L2.71973 5.99978" stroke="#0B123C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg> 
+				</button>
+				<div class="spoiler__content">
+					<div class="table-box">
+						<table class="table-zebra table-publications">
+							<thead>
+								<tr>
+									<th>Расшифровки данных публикационной активности</th>
+									<th>За период</th>
+									<th>Всего</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Всего статей в научных журналах</td>
+									<td>188</td>
+									<td>198</td>
+								</tr>
+								<tr>
+									<td>WebOfScience</td>
+									<td>166</td>
+									<td>177</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q1</span></td>
+									<td>8</td>
+									<td>8</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q2</span></td>
+									<td>1</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q3</span></td>
+									<td>2</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q4</span></td>
+									<td>10</td>
+									<td>10</td>
+								</tr>
+								<tr>
+									<td>Scopus</td>
+									<td>166</td>
+									<td>177</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Top10</span></td>
+									<td>52</td>
+									<td>54</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q1</span></td>
+									<td>122</td>
+									<td>123</td>
+								</tr>
+								<tr>
+									<td><span class="normal">Q2</span></td>
+									<td>28</td>
+									<td>32</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			 </div>
+
+		</div> 
+	</div>
+	 
+	<!-- ++++++++++JavaScript++++++++++-->
+	@@include('_scripts.html')
+	<!-- ++++++++++JavaScript end++++++++++-->
+</body>
+
+</html>

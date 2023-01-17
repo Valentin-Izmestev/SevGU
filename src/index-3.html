@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Title here</title>
+
+	<!--   Cascading Style Sheets-->
+	<!-- <link rel="stylesheet" href="css/style.css">  -->
+	@@include('_link.html')
+</head>
+
+<body>
+
+	@@include('_header.html')
+	<main class="main">
+		<div class="main-content">
+
+			<div class="control-panel control-panel-areas-of-expertise ">
+				<label class="form-elem-select form-elem-select--float-caption">
+					<select class="form-elem-select__item form-elem-select__item--no-search" name="areas-of-expertise">
+						<option value="">Области знаний</option>
+						<option value="1">Подводная робототехника</option>
+						<option value="2">Надводная робототехника</option>
+						<option value="3">Наземная робототехника</option>
+						<option value="4">Воздушная робототехника</option>
+					</select>
+					<span class="form-elem__caption">Области знаний</span>
+				</label>
+				<label class="form-elem-select form-elem-select--float-caption">
+					<select class="form-elem-select__item form-elem-select__item--no-search" name="gsn">
+						<option value="">УГСН</option>
+						<option value="2">АГСН</option>
+						<option value="3">ИГСН</option>
+					</select>
+					<span class="form-elem__caption">УГСН</span>
+				</label>
+				<label class="form-elem-select form-elem-select--float-caption">
+					<select class="form-elem-select__item form-elem-select__item--no-search" name="grnti">
+						<option value="">ЕГРНТИ</option>
+						<option value="2">АГРНТИ</option>
+						<option value="3">ИГРНТИ</option>
+					</select>
+					<span class="form-elem__caption">ЕГРНТИ</span>
+				</label>
+				<label class="form-elem-select form-elem-select--float-caption">
+					<select class="form-elem-select__item form-elem-select__item--no-search" name="priorities">
+						<option value="">Приоритеты СНТР</option>
+						<option value="2">Приоритеты СНТРА</option>
+						<option value="3">Приоритеты СНТРИ</option>
+					</select>
+					<span class="form-elem__caption">Приоритеты СНТР</span>
+				</label>
+				<label class="form-elem-select form-elem-select--float-caption">
+					<select class="form-elem-select__item form-elem-select__item--no-search" name="chelenge">
+						<option value="">Тип вызова</option>
+						<option value="1">«Большие вызовы» СНТР</option>
+						<option value="2">«Средние вызовы» СНТР</option>
+						<option value="3">«Малые вызовы» СНТР</option>
+					</select>
+					<span class="form-elem__caption">Тип вызова</span>
+				</label>
+				<label class="form-elem-select form-elem-select--float-caption">
+					<select class="form-elem-select__item form-elem-select__item--no-search" name="markets">
+						<option value="">Рынки</option>
+						<option value="1">Рынки НТИ</option>
+						<option value="2">Рынки ТНТ</option>
+						<option value="3">Рынки НТВ</option>
+					</select>
+					<span class="form-elem__caption">Рынки</span>
+				</label>
+			</div>
+
+			<h1 class="page-title">
+				Подводная робототехника
+			</h1>
+			<div class="dashboard dashboard-areas-of-expertise">
+				<table class="widget-table projects-table">
+					<thead>
+						<tr>
+							<th><a href="index.html">Научные проекты</a></th>
+							<th><a href="index-2.html">Трансфер</a></th>
+							<th>Образование</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<span class="table-cell-caption">
+									всего
+								</span>
+								5
+							</td>
+							<td>
+								<span class="table-cell-caption">
+									всего
+								</span>
+								5
+							</td>
+							<td><span class="table-cell-caption">
+									Обучающихся
+								</span>
+								5
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="table-cell-caption">
+									активно
+								</span>
+								5
+							</td>
+							<td>
+								<span class="table-cell-caption">
+									активно
+								</span>
+								5
+							</td>
+							<td><span class="table-cell-caption">
+									Выпускников
+								</span>
+								5
+							</td>
+						</tr>
+						<tr>
+							<td class="green-cell">
+								<span class="table-cell-caption">
+									за квартал
+								</span>
+								+13
+							</td>
+							<td>
+								<span class="table-cell-caption">
+									за квартал
+								</span>
+								+12
+							</td>
+							<td><span class="table-cell-caption">
+									Асистентов
+								</span>
+								5
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="dashboard-areas-of-expertise__cell">
+					<table class="widget-table categories-table">
+						<thead>
+							<th>
+								Категории
+							</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="green-cell">
+									<svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_65_1529)">
+											<path
+												d="M11.7725 3.90249L3.53 2.64999C3.1475 2.58999 2.7575 2.69499 2.465 2.94249C2.1725 3.19749 2 3.56499 2 3.94749V19.75C2 20.1625 2.3375 20.5 2.75 20.5H5.1875V16.5625C5.1875 15.835 5.7725 15.25 6.5 15.25H8.375C9.1025 15.25 9.6875 15.835 9.6875 16.5625V20.5H12.875V5.19999C12.875 4.55499 12.41 4.00749 11.7725 3.90249ZM6.125 13.5625H5C4.6895 13.5625 4.4375 13.3105 4.4375 13C4.4375 12.6895 4.6895 12.4375 5 12.4375H6.125C6.4355 12.4375 6.6875 12.6895 6.6875 13C6.6875 13.3105 6.4355 13.5625 6.125 13.5625ZM6.125 11.3125H5C4.6895 11.3125 4.4375 11.0605 4.4375 10.75C4.4375 10.4395 4.6895 10.1875 5 10.1875H6.125C6.4355 10.1875 6.6875 10.4395 6.6875 10.75C6.6875 11.0605 6.4355 11.3125 6.125 11.3125ZM6.125 9.06249H5C4.6895 9.06249 4.4375 8.81049 4.4375 8.49999C4.4375 8.18949 4.6895 7.93749 5 7.93749H6.125C6.4355 7.93749 6.6875 8.18949 6.6875 8.49999C6.6875 8.81049 6.4355 9.06249 6.125 9.06249ZM6.125 6.81249H5C4.6895 6.81249 4.4375 6.56049 4.4375 6.24999C4.4375 5.93949 4.6895 5.68749 5 5.68749H6.125C6.4355 5.68749 6.6875 5.93949 6.6875 6.24999C6.6875 6.56049 6.4355 6.81249 6.125 6.81249ZM9.875 13.5625H8.75C8.4395 13.5625 8.1875 13.3105 8.1875 13C8.1875 12.6895 8.4395 12.4375 8.75 12.4375H9.875C10.1855 12.4375 10.4375 12.6895 10.4375 13C10.4375 13.3105 10.1855 13.5625 9.875 13.5625ZM9.875 11.3125H8.75C8.4395 11.3125 8.1875 11.0605 8.1875 10.75C8.1875 10.4395 8.4395 10.1875 8.75 10.1875H9.875C10.1855 10.1875 10.4375 10.4395 10.4375 10.75C10.4375 11.0605 10.1855 11.3125 9.875 11.3125ZM9.875 9.06249H8.75C8.4395 9.06249 8.1875 8.81049 8.1875 8.49999C8.1875 8.18949 8.4395 7.93749 8.75 7.93749H9.875C10.1855 7.93749 10.4375 8.18949 10.4375 8.49999C10.4375 8.81049 10.1855 9.06249 9.875 9.06249ZM9.875 6.81249H8.75C8.4395 6.81249 8.1875 6.56049 8.1875 6.24999C8.1875 5.93949 8.4395 5.68749 8.75 5.68749H9.875C10.1855 5.68749 10.4375 5.93949 10.4375 6.24999C10.4375 6.56049 10.1855 6.81249 9.875 6.81249Z"
+												fill="#1FA263" />
+											<path opacity="0.4"
+												d="M18.965 10.6315L13.625 9.51324V20.5H18.6875C19.4113 20.5 20 19.9112 20 19.1875V11.914C20 11.2945 19.5778 10.7672 18.965 10.6315ZM17.1875 18.25H16.0625C15.752 18.25 15.5 17.998 15.5 17.6875C15.5 17.377 15.752 17.125 16.0625 17.125H17.1875C17.498 17.125 17.75 17.377 17.75 17.6875C17.75 17.998 17.498 18.25 17.1875 18.25ZM17.1875 16H16.0625C15.752 16 15.5 15.748 15.5 15.4375C15.5 15.127 15.752 14.875 16.0625 14.875H17.1875C17.498 14.875 17.75 15.127 17.75 15.4375C17.75 15.748 17.498 16 17.1875 16ZM17.1875 13.75H16.0625C15.752 13.75 15.5 13.498 15.5 13.1875C15.5 12.877 15.752 12.625 16.0625 12.625H17.1875C17.498 12.625 17.75 12.877 17.75 13.1875C17.75 13.498 17.498 13.75 17.1875 13.75Z"
+												fill="#1FA263" />
+										</g>
+										<defs>
+											<clipPath id="clip0_65_1529">
+												<rect width="18" height="18" fill="white"
+													transform="translate(2 2.5)" />
+											</clipPath>
+										</defs>
+									</svg>
+									<span>24 / </span> +2 (кв)
+								</td>
+							</tr>
+							<tr>
+								<td class="green-cell">
+									<svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_65_1535)">
+											<g clip-path="url(#clip1_65_1535)">
+												<path
+													d="M11.1757 3.94141H4.67188V3.02734C4.67188 2.73611 4.43577 2.5 4.14453 2.5C3.8533 2.5 3.61719 2.73611 3.61719 3.02734V19.9727C3.61719 20.2639 3.8533 20.5 4.14453 20.5C4.43577 20.5 4.67188 20.2639 4.67188 19.9727V12.0273H11.1757C11.467 12.0273 11.7031 11.7912 11.7031 11.5V4.46875C11.7031 4.17752 11.467 3.94141 11.1757 3.94141Z"
+													fill="#1FA263" />
+												<path opacity="0.4"
+													d="M18.3451 13.062L17.0172 9.74219L18.3451 6.42238C18.4101 6.25996 18.3901 6.07574 18.292 5.9309C18.1939 5.78605 18.0305 5.69922 17.8554 5.69922H12.7578V11.5C12.7578 12.3722 12.0479 13.082 11.1757 13.082C10.385 13.082 9.68158 13.082 8.89056 13.082V13.2578C8.89056 13.5496 9.12678 13.7852 9.41791 13.7852H17.8554C18.0305 13.7852 18.1939 13.6983 18.292 13.5535C18.3901 13.4086 18.4101 13.2244 18.3451 13.062Z"
+													fill="#1FA263" />
+											</g>
+										</g>
+										<defs>
+											<clipPath id="clip0_65_1535">
+												<rect width="18" height="18" fill="white"
+													transform="translate(2 2.5)" />
+											</clipPath>
+											<clipPath id="clip1_65_1535">
+												<rect width="18" height="18" fill="white"
+													transform="translate(2 2.5)" />
+											</clipPath>
+										</defs>
+									</svg>
+
+									<span> 24 / </span> +5 (кв)
+								</td>
+							</tr>
+							<tr>
+								<td class="red-cell">
+									<svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_65_1547)">
+											<path
+												d="M16.8523 6.17637C16.7745 6.40861 16.6427 6.62236 16.4702 6.79487L15.9006 7.36444C15.8022 7.4628 15.7461 7.59875 15.7461 7.73727V8.35525C15.7461 8.6462 15.9825 8.88259 16.2734 8.88259C17.1458 8.88259 17.8555 9.59225 17.8555 10.4646V11.2706C17.8555 11.5147 17.7978 11.7593 17.6886 11.9776L17.5084 12.3381C17.3894 12.5755 17.4847 12.7759 17.5315 12.8511C17.5779 12.9263 17.7144 13.1013 17.9801 13.1013H19.8516C19.9437 12.5868 20 12.0599 20 11.5193C20 8.99073 18.9084 6.70786 17.2189 5.07654L16.8523 6.17637Z"
+												fill="#E91616" />
+											<path
+												d="M6.60562 8.8285C6.48511 9.04738 6.56495 9.33524 6.78794 9.48356L7.88383 10.2143C7.87044 9.38674 8.33858 8.58079 9.16099 8.15849C9.31497 8.0797 9.41798 7.87784 9.41798 7.65586V7.30054C9.41798 6.42817 10.1276 5.71851 11 5.71851H11.6365C11.8085 5.71851 11.9651 5.63817 12.065 5.49808C12.1654 5.35801 12.1912 5.18445 12.1356 5.02122L11.3011 2.53454C11.2003 2.53121 11.1016 2.51929 11 2.51929C8.12019 2.51929 5.52506 3.92487 3.88379 6.04173L5.56946 6.45443C6.60453 6.7116 7.12439 7.88209 6.60562 8.8285Z"
+												fill="#E91616" />
+											<path opacity="0.4"
+												d="M12.923 6.11199C12.6268 6.52603 12.1459 6.77324 11.6365 6.77324H11C10.7091 6.77324 10.4727 7.00963 10.4727 7.30059V7.65591C10.4727 8.27287 10.1467 8.83832 9.64252 9.09683C9.02968 9.41148 8.7722 10.1031 9.05647 10.6711L9.21675 10.992H9.8207C10.7487 10.992 11.5835 11.508 11.9991 12.3381C12.2344 12.8088 12.7077 13.1013 13.234 13.1013H14.1641C14.4556 13.1013 14.6914 13.3372 14.6914 13.6287V14.6834C14.6914 15.394 14.4128 16.0604 13.9076 16.5594C13.0935 17.3629 12.3094 19.0181 11.7614 20.4807C15.4508 20.1683 18.5465 17.5827 19.6031 14.156H17.9801C17.4275 14.156 16.9244 13.8754 16.6339 13.4057C16.344 12.936 16.3177 12.3603 16.5649 11.8664L16.7452 11.5059C16.7817 11.4333 16.8008 11.3519 16.8008 11.2706V10.4646C16.8008 10.1737 16.5644 9.93727 16.2735 9.93727C15.4011 9.93727 14.6914 9.22761 14.6914 8.35524V7.73726C14.6914 7.31497 14.8562 6.91742 15.1549 6.61873L15.7245 6.04917C15.7822 5.99148 15.8259 5.9199 15.8522 5.84213L16.3517 4.34405C15.2255 3.50192 13.8986 2.88517 12.4534 2.64801L13.1336 4.68138C13.2979 5.16288 13.2191 5.69792 12.923 6.11199Z"
+												fill="#E91616" />
+											<path opacity="0.4"
+												d="M10.1285 20.4751C9.62782 19.4276 9.41797 17.2643 9.41797 16.3396C9.41797 16.0924 9.32168 15.8601 9.14709 15.6855L8.51779 15.0562C8.31181 14.8502 8.31181 14.5165 8.51779 14.3105L8.83195 13.9964C9.11415 13.7142 9.18369 13.2847 9.00552 12.9283L8.48151 11.8803L6.20296 10.3611C5.52884 9.91201 5.29917 9.01592 5.68075 8.3207C5.86536 7.98601 5.68371 7.5698 5.31407 7.47769L3.25304 6.97095C2.46234 8.30639 2 9.85808 2 11.5193C2 16.1685 5.59286 20.0353 10.1285 20.4751Z"
+												fill="#E91616" />
+											<path
+												d="M13.6367 14.6833V14.156H13.234C12.306 14.156 11.4712 13.64 11.0556 12.8098C10.8203 12.3391 10.347 12.0466 9.82067 12.0466H9.74392L9.94888 12.4566C10.3181 13.195 10.1904 14.0788 9.63525 14.6823L9.89274 14.9398C10.2667 15.3137 10.4726 15.8107 10.4726 16.3396C10.4726 17.196 10.6513 18.7787 10.9423 19.6737C11.4243 18.464 12.2107 16.7521 13.1665 15.8091C13.4699 15.5094 13.6367 15.1098 13.6367 14.6833Z"
+												fill="#E91616" />
+										</g>
+										<defs>
+											<clipPath id="clip0_65_1547">
+												<rect width="18" height="18" fill="white"
+													transform="translate(2 2.5)" />
+											</clipPath>
+										</defs>
+									</svg>
+									<span>24 /</span>+5 (кв)
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="widget-table personnel-involved-table">
+						<thead>
+							<tr>
+								<th colspan="2">Кадровый состав</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>Д.Н.</th>
+								<td>24</td>
+							</tr>
+							<tr>
+								<th>К.Н.</th>
+								<td>71</td>
+							</tr>
+							<tr>
+								<th>Без степени</th>
+								<td>0</td>
+							</tr>
+							<tr>
+								<th>Вакансии</th>
+								<td>6</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<table class="widget-table publications-this-table">
+					<thead>
+						<tr>
+							<th colspan="2">Публикации</th>
+							<th>За квартал</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>Q1</th>
+							<td>3</td>
+							<td class="green-cell">+3</td>
+						</tr>
+						<tr>
+							<th>Q2</th>
+							<td>5</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<th>Иные</th>
+							<td>1</td>
+							<td class="green-cell">+1</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="widget-table financing-direction-table">
+					<thead>
+						<tr>
+							<th colspan="3">
+								Финансирование
+							</th>
+						</tr>
+						<tr>
+							<th>Источник</th>
+							<th>Всего</th>
+							<th>Активно</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>Федеральный бюджет</th>
+							<td>10 000 000</td>
+							<td>158 458</td>
+						</tr>
+						<tr>
+							<th>Региональный бюджет</th>
+							<td>1 000 000</td>
+							<td>258 498</td>
+						</tr>
+						<tr>
+							<th>Внебюджетные средства</th>
+							<td>4 500 000</td>
+							<td>144 498</td>
+						</tr>
+						<tr>
+							<th>Собственные средства</th>
+							<td>900 000</td>
+							<td>250 015</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="widget-table rid-direction-table">
+					<thead>
+						<tr>
+							<th colspan="3">РИД</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>Всего РИД</th>
+							<td>5</td>
+							<td class="green-cell">+3 <span>(за квартал)</span> </td>
+						</tr>
+						<tr>
+							<th>Доходы</th>
+							<td colspan="2">4 000 000 ₽</td>
+						</tr>
+						<tr>
+							<th>+Δ (за квартал) </th>
+							<td class="green-cell" colspan="2">4 000 000 ₽</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="widget-table media-direction-table">
+					<thead>
+						<tr>
+							<th colspan="2">Медиа</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>Всего</th>
+							<td>5</td>
+						</tr>
+						<tr>
+							<th>На внешних ресурсах</th>
+							<td>5</td>
+						</tr>
+						<tr>
+							<th colspan="2">
+								<a href="#" class="media-link">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M18.3334 9.22497V13.875C18.3334 16.3333 16.3334 18.3333 13.8751 18.3333H6.12508C3.66675 18.3333 1.66675 16.3333 1.66675 13.875V7.86664H18.1167C18.2417 8.24164 18.3084 8.62497 18.3251 9.03331C18.3334 9.09164 18.3334 9.16664 18.3334 9.22497Z"
+											fill="#1074BC" />
+										<path opacity="0.4"
+											d="M18.1167 7.86669H1.66675V5.35002C1.66675 3.31669 3.31675 1.66669 5.35008 1.66669H7.29175C8.65008 1.66669 9.07508 2.10835 9.61675 2.83335L10.7834 4.38335C11.0417 4.72502 11.0751 4.77502 11.5584 4.77502H13.8834C15.8584 4.76669 17.5417 6.06669 18.1167 7.86669Z"
+											fill="#1074BC" />
+									</svg>
+									Презентации
+								</a>
+							</th>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+	</main>
+	@@include('_footer.html')
+	<div class="great-shadow"></div>
+	<!-- ++++++++++JavaScript++++++++++-->
+	<@@include('_scripts.html')
+	<!-- ++++++++++JavaScript end++++++++++-->
+</body>
+
+</html>

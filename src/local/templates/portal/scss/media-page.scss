@@ -1,0 +1,18 @@
+.media-tab-control-box{
+    display: flex;
+    .elipsis-btn{
+        flex-shrink: 0;
+        margin-right: 0.8rem;
+    }
+}
+.media-news{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.6rem;
+}
+
+.video-collection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.6rem;
+}
