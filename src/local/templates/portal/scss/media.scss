@@ -1,32 +1,45 @@
-@media screen and (max-width: 1880px){
+@media screen and (max-width: 1880px) {
     .innovative-projects-box .tlr-stack {
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
-@media screen and (max-width: 1680px){
+
+@media screen and (max-width: 1880px) {
+    .widget-table thead th {
+        font-size: 1.4rem;
+
+    }
+}
+
+@media screen and (max-width: 1680px) {
     .progress-widget {
         .progress-widget__caption {
-            font-size: 1.2rem; 
+            font-size: 1.2rem;
         }
     }
-    .innovative-projects-box .status-cell-stack { 
-        grid-template-columns: repeat(2, 1fr); 
+
+    .innovative-projects-box .status-cell-stack {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
-@media screen and (max-width: 1550px){
-    .control-panel-areas-of-expertise { 
-        grid-template-columns: repeat(3,1fr); 
+
+@media screen and (max-width: 1550px) {
+    .control-panel-areas-of-expertise {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
-@media screen and (max-width: 1510px){
-    .project-top-panel{
+
+@media screen and (max-width: 1510px) {
+    .project-top-panel {
         position: relative;
         justify-content: space-between;
         // flex-wrap: wrap;
     }
+
     .project-top-panel {
         padding-bottom: 4.6rem;
-        .progress-widget{
+
+        .progress-widget {
             position: absolute;
             bottom: 0;
             left: 0;
@@ -35,61 +48,74 @@
             margin-left: 0;
             font-size: 1.8rem;
         }
-        .project-group{
-            width: 25%; 
+
+        .project-group {
+            width: 25%;
             justify-content: center;
         }
-        .project-top-panel__item{ 
+
+        .project-top-panel__item {
             width: 15%;
         }
     }
+
     .team-table {
         tbody {
             td:last-child {
-                .inner-table-btn, 
+
+                .inner-table-btn,
                 .trachcan-btn {
                     margin-left: 1rem;
-                } 
+                }
             }
         }
     }
 }
-@media screen and (max-width: 1400px){
-    .media-news { 
-        grid-template-columns: repeat(1,1fr); 
+
+@media screen and (max-width: 1400px) {
+    .media-news {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
-@media screen and (max-width: 1380px){
-    .dashboard-areas-of-expertise { 
-        grid-template-columns: 1fr 1fr; 
+
+@media screen and (max-width: 1380px) {
+    .dashboard-areas-of-expertise {
+        grid-template-columns: 1fr 1fr;
     }
-    .video-collection { 
-        grid-template-columns: repeat(2,1fr); 
+
+    .video-collection {
+        grid-template-columns: repeat(2, 1fr);
     }
-    
+
 }
-@media screen and (max-width: 1200px){
-    .menu{
-        li{
+
+@media screen and (max-width: 1200px) {
+    .menu {
+        li {
             &:not(:last-child) {
                 margin-right: 1.4rem;
             }
-            a{
+
+            a {
                 line-height: 28px;
             }
         }
     }
 }
-@media screen and (max-width: 1320px){ 
-    .innovative-projects-box{
+
+@media screen and (max-width: 1320px) {
+    .innovative-projects-box {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .scientific-projects-box {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
+
     .project-top-panel {
         padding-bottom: 0;
-        .progress-widget{
+
+        .progress-widget {
             position: relative;
             bottom: 0;
             left: 0;
@@ -98,31 +124,38 @@
             margin-left: 0.8;
             font-size: 1.8rem;
         }
-        .project-group{
-            width: auto; 
+
+        .project-group {
+            width: auto;
             justify-content: center;
         }
-        .project-top-panel__item{ 
+
+        .project-top-panel__item {
             width: 3.8rem;
         }
     }
-    .innovative-projects-box .status-cell-stack { 
-        grid-template-columns: repeat(4,1fr);
+
+    .innovative-projects-box .status-cell-stack {
+        grid-template-columns: repeat(4, 1fr);
     }
-    .innovative-projects-box .tlr-stack { 
-        grid-template-columns: repeat(6,1fr);
+
+    .innovative-projects-box .tlr-stack {
+        grid-template-columns: repeat(6, 1fr);
     }
 }
-@media screen and (max-width: 1160px){
-    .dashboard-areas-of-expertise { 
+
+@media screen and (max-width: 1160px) {
+    .dashboard-areas-of-expertise {
         grid-template-columns: 1fr;
     }
 }
+
 @media screen and (max-width: 1110px) {
-    .innovative-projects-box .status-cell-stack { 
-        grid-template-columns: repeat(2,1fr);
+    .innovative-projects-box .status-cell-stack {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .innovative-projects-box .tlr-stack { 
-        grid-template-columns: repeat(3,1fr);
+
+    .innovative-projects-box .tlr-stack {
+        grid-template-columns: repeat(3, 1fr);
     }
 }

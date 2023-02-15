@@ -3,7 +3,8 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.8rem;
 }
-.project-winget-header {
+
+.project-widget-header {
     display: flex;
     align-items: center;
     margin-bottom: 2rem;
@@ -16,48 +17,55 @@
         margin-left: 2.4rem;
     }
 }
-.scientific-project { 
-   
+
+.scientific-project {
+
     .project-top-panel {
         margin-bottom: 1.6rem;
     }
 
-    .scientific-project__bottom-panel {
-        display: grid;
-        grid-template-columns: 1fr 23rem;
-        grid-gap: 1.4rem;
-    }
 
     .status-cell-stack {
-        .status-cell {
-            margin-bottom: 0.8rem;
-        }
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0.8rem;
+        margin-bottom: 1.6rem;
     }
 
     .trl-stack {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 0.6rem;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 0.8rem;
+        margin-bottom: 1.6rem;
 
     }
+
     .media-btn,
-    .sub-btn{
+    .sub-btn {
         margin-top: 1.2rem;
     }
-    .left-col{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        table:not(:last-child){
-            margin-bottom: 0.6rem;
+
+    .scientific-project__table-panel {
+        display: grid;
+        grid-template-columns: 54.25% 44.49%;
+        grid-gap: 0.8rem;
+
+        .publications-table {
+            thead th {
+                white-space: nowrap;
+
+            }
         }
     }
-    .right-col{
+
+    .project-widget__footer {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        box-sizing: border-box;
-        padding-bottom: 3px;
+
+        .media-btn {
+            max-width: 112px;
+            flex-shrink: 0;
+            margin-right: 0.5rem;
+        }
     }
 }
 
@@ -205,39 +213,45 @@
     }
 }
 
-.innovative-projects-box{
+.innovative-projects-box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.6rem;
-    .status-cell-stack{
+
+    .status-cell-stack {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr minmax(14rem, 15.4rem);
         grid-gap: 0.6rem;
         margin-top: 1.6rem;
     }
-    .status-cell{
+
+    .status-cell {
         padding-right: 1rem;
         padding-left: 1.4rem;
-        svg{
+
+        svg {
             margin-right: .6rem;
         }
     }
-    .trl-stack{
+
+    .trl-stack {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-gap: 0.6rem;
         margin-top: 1rem;
     }
 
-    .innovative-project__footer{
+    .innovative-project__footer {
         display: flex;
         margin-top: 1.6rem;
-        .media-btn{
+
+        .media-btn {
             width: 11.2rem;
             margin-right: 0.8rem;
             flex-shrink: 0;
         }
-        .sub-btn{
+
+        .sub-btn {
             flex-grow: 1;
         }
     }
