@@ -1,3 +1,8 @@
+.workarea-content {
+    position: relative;
+    z-index: 400;
+}
+
 .great-shadow {
     position: fixed;
     top: 0;
@@ -303,6 +308,7 @@ a.manage-btn,
     .progress-widget__caption {
         font-size: 1.8rem;
         font-weight: 600;
+        white-space: nowrap;
         z-index: 2
     }
 }

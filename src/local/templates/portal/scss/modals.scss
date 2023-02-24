@@ -1,4 +1,4 @@
-.right-modal{
+.right-modal {
     position: fixed;
     top: 0;
     right: -2000px;
@@ -7,19 +7,22 @@
     height: 100%;
     background-color: var(--white);
     padding: 4rem;
-    box-sizing: border-box; 
-    z-index: 110;
+    box-sizing: border-box;
+    z-index: 510;
     transition: var(--great-transition);
-    &--show{
+
+    &--show {
         right: 0;
     }
-    .close-modal-btn{
+
+    .close-modal-btn {
         position: absolute;
         left: -5.6rem;
         top: 3.2rem;
         transition: var(--great-transition);
         transform: scale(1);
-        &:hover{
+
+        &:hover {
             transform: scale(1.1);
             // animation-name: gurgling;
             // animation-duration: 300ms;
@@ -30,26 +33,30 @@
 
         }
     }
-    .right-modal__content{
+
+    .right-modal__content {
         position: relative;
         display: flex;
         flex-direction: column;
         height: 100%;
         overflow: auto;
     }
-    h2{
+
+    h2 {
         margin-bottom: 2.4rem;
         font-size: 2.4rem;
         line-height: 1.2;
         font-weight: 600;
     }
-    p{ 
+
+    p {
         margin: 1.6rem 0;
         font-size: 1.8rem;
         color: var(--dark-grey);
     }
 }
-.close-modal-btn{
+
+.close-modal-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,34 +65,42 @@
     border-radius: 50%;
     background-color: var(--red);
     cursor: pointer;
-    svg{
+
+    svg {
         display: block;
         width: 1rem;
         height: 1rem;
-        path{
+
+        path {
             fill: var(--white);
         }
     }
 }
 
-.add-fin{
+.add-fin {
     max-width: 980px;
 }
-.scientometrics{
+
+.scientometrics {
     max-width: 980px;
-    .employee-card{
+
+    .employee-card {
         margin-bottom: 1.6rem;
     }
-    .charts-box{
+
+    .charts-box {
         margin-bottom: 1.6rem;
     }
-    .table-box{
+
+    .table-box {
         box-shadow: none;
     }
-    .spoiler{
+
+    .spoiler {
         margin-bottom: 1.6rem;
     }
 }
-.add-news{
+
+.add-news {
     max-width: 980px;
 }

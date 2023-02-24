@@ -904,7 +904,7 @@ legend {
   padding: 4rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  z-index: 110;
+  z-index: 510;
   -webkit-transition: var(--great-transition);
   -o-transition: var(--great-transition);
   transition: var(--great-transition);
@@ -1311,7 +1311,7 @@ legend {
   position: relative;
   margin: 0 auto;
   padding-right: 80px;
-  padding-left: 260px;
+  padding-left: 255px;
   padding-bottom: 3rem;
   overflow: hidden;
 }
@@ -1342,6 +1342,11 @@ legend {
 .columns-box--two-col {
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
+}
+
+.workarea-content {
+  position: relative;
+  z-index: 400;
 }
 
 .great-shadow {
@@ -1664,6 +1669,7 @@ a.manage-btn:hover,
 .progress-widget .progress-widget__caption {
   font-size: 1.8rem;
   font-weight: 600;
+  white-space: nowrap;
   z-index: 2;
 }
 
@@ -3167,6 +3173,8 @@ table .time {
   background-color: var(--bg-grey);
 }
 .project-group svg {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   display: block;
   margin-right: 0.8rem;
   width: 2.2rem;
@@ -3176,6 +3184,7 @@ table .time {
   font-size: 1.6rem;
   line-height: 1;
   font-weight: 600;
+  white-space: nowrap;
 }
 .project-group .project-group__detailed-info {
   position: absolute;
@@ -3306,7 +3315,13 @@ table .time {
 }
 @media screen and (max-width: 1680px) {
   .progress-widget .progress-widget__caption {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
+  }
+  .sub-btn .sub-btn__caption {
+    font-size: 1.6rem;
+  }
+  .project-group .project-group__line {
+    font-size: 1.4rem;
   }
   .innovative-projects-box .status-cell-stack {
     -ms-grid-columns: (1fr)[2];
@@ -3352,6 +3367,16 @@ table .time {
     margin-left: 1rem;
   }
 }
+@media screen and (max-width: 1430px) {
+  .innovative-projects-box {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .scientific-projects-box {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 @media screen and (max-width: 1400px) {
   .media-news {
     -ms-grid-columns: (1fr)[1];
@@ -3377,14 +3402,6 @@ table .time {
   }
 }
 @media screen and (max-width: 1320px) {
-  .innovative-projects-box {
-    -ms-grid-columns: (1fr)[1];
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .scientific-projects-box {
-    -ms-grid-columns: (1fr)[1];
-    grid-template-columns: repeat(1, 1fr);
-  }
   .project-top-panel {
     padding-bottom: 0;
   }
