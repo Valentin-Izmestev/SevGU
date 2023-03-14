@@ -1,5 +1,5 @@
-@ @include('jquery-1.12.1.js');
-@ @include('choices.min.js');
+@@include('jquery-1.12.1.js');
+@@include('choices.min.js');
 
 
 

@@ -2446,7 +2446,6 @@ a.manage-btn:hover,
   background-color: var(--bg-grey);
   border-radius: 0.4rem;
   padding: 0 2rem;
-  overflow: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
