@@ -35,6 +35,13 @@
     .control-panel-areas-of-expertise {
         grid-template-columns: repeat(3, 1fr);
     }
+    .trl {
+        span{
+            &:not(:last-child) {
+                margin-right: 0.4rem;
+            }
+        } 
+    }
 }
 
 @media screen and (max-width: 1510px) {
@@ -79,14 +86,25 @@
         }
     }
 }
-
-@media screen and (max-width: 1430px) {
+@media screen and (max-width: 1480px) {
+    .media-news {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width: 1450px) {
     .innovative-projects-box {
         grid-template-columns: repeat(1, 1fr);
     }
 
     .scientific-projects-box {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .trl {
+        span{
+            &:not(:last-child) {
+                margin-right: 0.8rem;
+            }
+        } 
     }
 }
 
@@ -161,7 +179,11 @@
         grid-template-columns: 1fr;
     }
 }
-
+@media screen and (max-width: 1120px) {
+    .control-panel-areas-of-expertise { 
+        grid-template-columns: repeat(2,1fr);
+    }
+}
 @media screen and (max-width: 1110px) {
     .innovative-projects-box .status-cell-stack {
         grid-template-columns: repeat(2, 1fr);
@@ -169,5 +191,24 @@
 
     .innovative-projects-box .tlr-stack {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 999px){
+    .video-collection { 
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media screen and (max-width: 900px){
+    .news{
+        flex-direction: column;
+        .news__img{
+            margin: 0;
+            margin-bottom: 2rem;
+        }
+        .news__flag { 
+            top: 1rem;
+            right: 1rem; 
+        }
     }
 }

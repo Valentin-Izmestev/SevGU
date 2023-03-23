@@ -60,7 +60,7 @@
 
 .control-panel {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 2rem;
 
     .btn {
@@ -194,6 +194,8 @@
 }
 
 .project-widget {
+    display: flex;
+    flex-direction: column;
     background-color: var(--white);
     box-shadow: var(--elem-shadow);
     padding: 2rem;
@@ -477,7 +479,7 @@ a.manage-btn,
     width: 100%;
     font-size: 1.4rem;
     font-weight: 600;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0;
     border-radius: 0.2rem;
     box-sizing: border-box;
 
@@ -864,7 +866,7 @@ a.manage-btn,
     background-color: var(--white);
     box-shadow: var(--elem-shadow);
     box-sizing: border-box;
-
+   
     .news__flag {
         position: absolute;
         display: block;
@@ -890,7 +892,13 @@ a.manage-btn,
         object-fit: cover;
         object-position: center center;
     }
-
+    a{
+        display: block;
+        margin-right: 1.9rem;
+        img{
+            margin-right: 0;
+        }
+    }
     .news__preview {
         position: relative;
         display: flex;

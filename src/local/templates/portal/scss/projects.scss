@@ -59,6 +59,7 @@
     }
 
     .project-widget__footer {
+        margin-top: auto;
         display: flex;
 
         .media-btn {
@@ -130,9 +131,15 @@
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
-
+        transition: var(--great-transition); 
         &.popup-hint-trigger {
             height: auto;
+        }
+    }
+    a.scientific-project-title__text {
+        &:hover{
+            text-decoration: none;
+            color: #2067b0;
         }
     }
 
@@ -241,11 +248,12 @@
         grid-template-columns: repeat(6, 1fr);
         grid-gap: 0.6rem;
         margin-top: 1rem;
+        margin-bottom: 1.6rem;
     }
 
     .innovative-project__footer {
         display: flex;
-        margin-top: 1.6rem;
+        margin-top: auto;
 
         .media-btn {
             width: 11.2rem;

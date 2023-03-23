@@ -1404,9 +1404,9 @@ legend {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin-bottom: 2rem;
 }
 .control-panel .btn {
@@ -1537,6 +1537,13 @@ legend {
 }
 
 .project-widget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: var(--white);
   -webkit-box-shadow: var(--elem-shadow);
           box-shadow: var(--elem-shadow);
@@ -1825,7 +1832,7 @@ a.manage-btn:hover,
   width: 100%;
   font-size: 1.4rem;
   font-weight: 600;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0;
   border-radius: 0.2rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2238,6 +2245,13 @@ a.manage-btn:hover,
      object-fit: cover;
   -o-object-position: center center;
      object-position: center center;
+}
+.news a {
+  display: block;
+  margin-right: 1.9rem;
+}
+.news a img {
+  margin-right: 0;
 }
 .news .news__preview {
   position: relative;
@@ -3069,6 +3083,7 @@ table .time {
   white-space: nowrap;
 }
 .scientific-project .project-widget__footer {
+  margin-top: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3144,9 +3159,16 @@ table .time {
   white-space: nowrap;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
+  -webkit-transition: var(--great-transition);
+  -o-transition: var(--great-transition);
+  transition: var(--great-transition);
 }
 .scientific-project-title .scientific-project-title__text.popup-hint-trigger {
   height: auto;
+}
+.scientific-project-title a.scientific-project-title__text:hover {
+  text-decoration: none;
+  color: #2067b0;
 }
 .scientific-project-title .popup-hint {
   top: 2rem;
@@ -3255,12 +3277,13 @@ table .time {
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 0.6rem;
   margin-top: 1rem;
+  margin-bottom: 1.6rem;
 }
 .innovative-projects-box .innovative-project__footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 1.6rem;
+  margin-top: auto;
 }
 .innovative-projects-box .innovative-project__footer .media-btn {
   width: 11.2rem;
@@ -3332,6 +3355,9 @@ table .time {
     -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
   }
+  .trl span:not(:last-child) {
+    margin-right: 0.4rem;
+  }
 }
 @media screen and (max-width: 1510px) {
   .project-top-panel {
@@ -3366,7 +3392,13 @@ table .time {
     margin-left: 1rem;
   }
 }
-@media screen and (max-width: 1430px) {
+@media screen and (max-width: 1480px) {
+  .media-news {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 1450px) {
   .innovative-projects-box {
     -ms-grid-columns: (1fr)[1];
     grid-template-columns: repeat(1, 1fr);
@@ -3374,6 +3406,9 @@ table .time {
   .scientific-projects-box {
     -ms-grid-columns: (1fr)[1];
     grid-template-columns: repeat(1, 1fr);
+  }
+  .trl span:not(:last-child) {
+    margin-right: 0.8rem;
   }
 }
 @media screen and (max-width: 1400px) {
@@ -3437,6 +3472,12 @@ table .time {
     grid-template-columns: 1fr;
   }
 }
+@media screen and (max-width: 1120px) {
+  .control-panel-areas-of-expertise {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media screen and (max-width: 1110px) {
   .innovative-projects-box .status-cell-stack {
     -ms-grid-columns: (1fr)[2];
@@ -3445,5 +3486,27 @@ table .time {
   .innovative-projects-box .tlr-stack {
     -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 999px) {
+  .video-collection {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 900px) {
+  .news {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .news .news__img {
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+  .news .news__flag {
+    top: 1rem;
+    right: 1rem;
   }
 }
