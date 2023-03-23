@@ -40,6 +40,11 @@
         flex-direction: column;
         height: 100%;
         overflow: auto;
+        iframe{
+            body{
+                padding-right: 2rem;
+            }
+        }
     }
 
     h2 {

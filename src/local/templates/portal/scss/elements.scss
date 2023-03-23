@@ -60,7 +60,8 @@
 
 .control-panel {
     display: flex;
-    align-items: flex-start;
+    // align-items: flex-start;
+    align-items: center;
     margin-bottom: 2rem;
 
     .btn {
@@ -118,6 +119,7 @@
 
     &:hover {
         background-color: var(--dark-blue);
+        color: var(--white);
         text-decoration: none;
     }
 
@@ -803,6 +805,7 @@ a.manage-btn,
         border-radius: 50%;
         inset: 0;
         background: conic-gradient(var(--light-green) calc(var(--percent) * 1%), var(--green) 0);
+        transform: scaleX(-1);
     }
 
 }
