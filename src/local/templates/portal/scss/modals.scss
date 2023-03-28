@@ -7,6 +7,7 @@
     height: 100%;
     background-color: var(--white);
     padding: 4rem;
+    padding-right: 2rem;
     box-sizing: border-box;
     z-index: 510;
     transition: var(--great-transition);
@@ -39,6 +40,8 @@
         display: flex;
         flex-direction: column;
         height: 100%;
+        padding-right: 2rem;
+        box-sizing: border-box;
         overflow: auto;
         iframe{
             body{

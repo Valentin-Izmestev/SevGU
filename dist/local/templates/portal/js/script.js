@@ -97,6 +97,14 @@ function ready() {
 
         });
     }
+    let subtaskPoilerBtns = $('.subtask-spoiler__btn');
+    subtaskPoilerBtns.on('click', function(){
+        let parent = $(this).closest('.subtask-spoiler');
+        parent.toggleClass('subtask-spoiler--active');
+        parent.find('.subtask-spoiler__bag').slideToggle(200);
+    })
+    //  
+    // 
 };
 
 $(function () {

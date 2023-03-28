@@ -127,6 +127,7 @@
 
 @media screen and (max-width: 1230px) {
     .menu {
+        flex-wrap: wrap;
         li {
             &:not(:last-child) {
                 margin-right: 1.4rem;
@@ -141,6 +142,15 @@
         .menu-additional{
             .btn {
                 margin-left: 10px;
+            }
+        }
+    }
+    .btn{
+        font-size: 1.4rem;
+        padding: 0.5rem 0.5rem;
+        &--with-elem{
+            svg{
+                margin-right: 0;
             }
         }
     }
@@ -206,16 +216,16 @@
     }
 }
 
-@media screen and (max-width: 900px){
-    .news{
-        flex-direction: column;
-        .news__img{
-            margin: 0;
-            margin-bottom: 2rem;
-        }
-        .news__flag { 
-            top: 1rem;
-            right: 1rem; 
-        }
-    }
-}
+// @media screen and (max-width: 900px){
+//     .news{
+//         flex-direction: column;
+//         .news__img{
+//             margin: 0;
+//             margin-bottom: 2rem;
+//         }
+//         .news__flag { 
+//             top: 1rem;
+//             right: 1rem; 
+//         }
+//     }
+// }

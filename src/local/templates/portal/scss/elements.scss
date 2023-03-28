@@ -105,8 +105,7 @@
     justify-content: center;
     width: 100%;
     max-width: 200px;
-    min-height: 4.2rem;
-
+    min-height: 4.2rem; 
     padding: 0.5rem 1rem;
     background-color: var(--blue);
     border-radius: 0.4rem;
@@ -116,7 +115,7 @@
     color: var(--white);
     box-sizing: border-box;
     transition: var(--great-transition);
-
+    white-space: nowrap;
     &:hover {
         background-color: var(--dark-blue);
         color: var(--white);
@@ -325,7 +324,10 @@ a.manage-btn,
     align-items: center;
     padding: 1.6rem;
     box-sizing: border-box;
-
+    &:hover{
+        text-decoration: none;
+        color: inherit;
+    }
     svg {
         display: block;
         width: 3.6rem;
@@ -381,7 +383,9 @@ a.manage-btn,
     &--task-active-noproblem {
         color: var(--green);
         background-color: var(--light-green);
-
+        &a:hover, &:hover{
+            color:  var(--green);
+        }
         svg {
             path {
                 fill: var(--green);
@@ -396,7 +400,9 @@ a.manage-btn,
     &--task-completed {
         color: var(--dark-grey);
         background-color: var(--bg-grey);
-
+        &a:hover, &:hover{
+            color:  var(--dark-grey);
+        }
         svg {
             path {
                 fill: var(--dark-grey);
@@ -411,7 +417,9 @@ a.manage-btn,
     &--task-active-checkpoint {
         color: var(--yellow);
         background-color: var(--light-yellow);
-
+        &a:hover, &:hover{
+            color:  var(--yellow);
+        }
         svg {
             path {
                 fill: var(--yellow);
@@ -426,7 +434,9 @@ a.manage-btn,
     &--task-active-alert {
         color: var(--red);
         background-color: var(--light-red);
-
+        &a:hover, &:hover{
+            color: var(--red);
+        }
         svg {
             path {
                 fill: var(--red);
@@ -441,7 +451,9 @@ a.manage-btn,
     &--task-go-repository {
         color: var(--blue);
         background-color: var(--light-blue);
-
+        &a:hover, &:hover{
+            color: var(--blue);
+        }
         svg {
             path {
                 fill: var(--blue);
@@ -804,7 +816,7 @@ a.manage-btn,
         position: absolute;
         border-radius: 50%;
         inset: 0;
-        background: conic-gradient(var(--light-green) calc(var(--percent) * 1%), var(--green) 0);
+        background: conic-gradient(var(--green ) calc(var(--percent) * 1%), var(--light-green) 0);
         transform: scaleX(-1);
     }
 
@@ -1152,5 +1164,92 @@ a.manage-btn,
         padding-top: 0.5rem;
         padding-bottom: 1.2rem;
         box-sizing: border-box;
+    }
+}
+
+.subtask-spoiler{
+    
+    .subtask-spoiler__display{
+        position: relative;
+        display: flex;
+        padding-right: 35px;
+        box-sizing: border-box;
+        &>svg{
+            width: 24px;
+            height: 24px;
+        }
+        .subtask-spoiler__caption{
+            flex-grow: 1;
+        }  
+    }
+    
+    .subtask-spoiler__btn{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        background-color: transparent; 
+        transform: translateY(-50%);
+        cursor: pointer;
+        svg{
+            width: 24px;
+            height: 24px;
+            margin: 0;
+            transition: var(--great-transition);
+            path{
+                fill: #8088A6;
+            } 
+        }
+        &:hover{
+            svg{ 
+                path{
+                    fill: #1074BC;
+                } 
+            }
+        }
+    }
+    .subtask-spoiler__bag{
+        display: none;
+        padding: 16px 16px 16px 30px; 
+    }
+    &--active{
+        .subtask-spoiler__btn{
+            svg{ 
+                path{
+                    fill: #1074BC;
+                } 
+            }
+        }
+    }
+}
+
+.file-list{
+
+    li{
+        position: relative;
+        display: block;
+        padding: 0;
+        margin: 0;
+        padding-left: 30px; 
+        box-sizing: border-box;
+        &:not(:last-child){
+            margin-bottom: 10px;
+        }
+        svg{
+            position: absolute;
+            top: 3px;
+            left: 0;
+        }
+        a{
+            display: inline-block;
+            margin-bottom: 3px;
+            font-size: 15px;
+            line-height: 1.3;
+            color: var(--dark-blue);
+        }
+        span{
+            display: block;
+            font-size: 14px;
+            color: var(--grey);
+        }
     }
 }
