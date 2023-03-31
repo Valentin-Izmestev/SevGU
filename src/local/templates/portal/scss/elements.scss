@@ -2,7 +2,11 @@
     position: relative;
     z-index: 400;
 }
-
+.white-box{
+    background-color: #ffffff;
+    padding: 2rem;
+    box-sizing: border-box;
+}
 .great-shadow {
     position: fixed;
     top: 0;
@@ -323,6 +327,8 @@ a.manage-btn,
     display: flex;
     align-items: center;
     padding: 1.6rem;
+    font-family: 'MyriadPro', sans-serif;
+    font-weight: 400;
     box-sizing: border-box;
     &:hover{
         text-decoration: none;
@@ -474,11 +480,13 @@ a.manage-btn,
             padding-bottom: 0;
         }
 
+        a.popup-hint__title,
         .popup-hint__title {
             position: static;
-            max-width: 8rem;
+            width: 9rem; 
             white-space: normal;
             text-overflow: ellipsis;
+            
         }
 
     }
@@ -1252,4 +1260,20 @@ a.manage-btn,
             color: var(--grey);
         }
     }
+}
+
+.money-editor input[type="text"]{
+	border: 1px solid #c6cdd3;
+    border-radius: var(--ui-field-border-radius,2px);
+    padding: 8px 10px;
+    color: #535c69;
+    font-size: 15px;
+    background-color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 3px;
+    width: 100%;
+}
+.archive-btn{ 
+    background-color: transparent;
 }

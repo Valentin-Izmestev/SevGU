@@ -426,8 +426,8 @@ table{
     tbody{
         td:first-child{
             .team-table__item{
-                display: flex;
-                align-items: center;
+                // display: flex;
+                // align-items: center;
             }
             
             .team-member-position{
@@ -453,8 +453,8 @@ table{
             white-space: nowrap;
         }
         td:last-child{
-            display: flex;
-            align-items: center;
+            // display: flex;
+            // align-items: center;
             .team-table__mail{
                 margin-right: auto;
             }

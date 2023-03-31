@@ -1,13 +1,12 @@
 @@include('jquery-1.12.1.js');
 @@include('choices.min.js');
+@@include('jquery.maskedinput.js');
 
 
 
 document.addEventListener('DOMContentLoaded', ready);
 
-function ready() {
-
-
+function ready() { 
     let greatShadow = document.querySelector('.great-shadow');
     let showModalBtn = document.querySelectorAll('.show-modal');
     let allRightModals = document.querySelectorAll('.right-modal');
@@ -99,14 +98,40 @@ function ready() {
         parent.find('.subtask-spoiler__bag').slideToggle(200);
     })
     //  
+    /*
+    formatManey - функция, которая валидирует данные вводимые в поле для валюты и еще работает как маска расставляя пробелы между тысячными разрядами. 
+    target - объект input, чьи вводимые данные нужно обрабатывать
+    */
+    function formatManey(target){
+        let val = target.value.replace(/[^0-9.]/g, '');
+        if(val.indexOf('.') != '-1'){ 
+            val = val.substring(0, val.indexOf('.')  + 3); 
+        }
+        val = val.replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+        target.value = val;
+    }
     // 
-};
+    let moneyInputs = document.querySelectorAll('.vi-mask--money');
 
+    if(moneyInputs.length > 0){ 
+        moneyInputs.forEach(item=>{ 
+            item.addEventListener('input', function(e){ 
+                formatManey(this)
+            });
+        });
+    }
+ 
+    
+};
+ 
 $(function () {
     let spoilerBtn = $('.spoiler__btn');
     spoilerBtn.on('click', function (e) {
         e.preventDefault();
         $(this).parent().toggleClass('active');
         $(this).next().slideToggle(200);
-    })
+    });
+ 
+   $(".phone").mask("+7 (999) 999-99-99");
+ 
 });
