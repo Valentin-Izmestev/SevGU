@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Title here</title>
+
+	<!--   Cascading Style Sheets-->
+	<!-- <link rel="stylesheet" href="css/style.css">  -->
+	<link rel="stylesheet" href="local/templates/portal/css/style.min.css?v1=10">
+</head>
+
+<body>
+
+	<!-- <header id="header">
+    <div class="inner">
+        Шапка
+    </div>
+</header> -->
+	<main class="main">
+		<div class="main-content">
+			<h1 class="page-title">
+				Для страницы "Список статей"
+			</h1>
+			<div class="sort-panel">
+				<label class="sort-select-box">
+					<select class="sort-select" name="sort-article"> 
+						<option value="1">По дате изменения</option>
+						<option value="2">по базе данных</option>
+						<option value="3">По квартилю</option> 
+					</select>
+					<!-- <span class="form-elem__caption">Выберите источник финансирования</span> -->
+				</label>
+				<div class="output-type-btn-box" style="display: none;">
+					<button class="output-type-btn output-type-btn--line active">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_1196_4864)">
+							<path d="M3 7H21" stroke="#8088A6" stroke-width="1.5" stroke-linecap="round"/>
+							<path d="M3 12H21" stroke="#8088A6" stroke-width="1.5" stroke-linecap="round"/>
+							<path d="M3 17H21" stroke="#8088A6" stroke-width="1.5" stroke-linecap="round"/>
+							</g>
+							<defs>
+							<clipPath id="clip0_1196_4864">
+							<rect width="24" height="24" fill="white"/>
+							</clipPath>
+							</defs>
+						</svg> 
+					</button>
+					<button class="output-type-btn output-type-btn--grid">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_1196_4865)">
+							<path d="M5 10H7C9 10 10 9 10 7V5C10 3 9 2 7 2H5C3 2 2 3 2 5V7C2 9 3 10 5 10Z" stroke="#D0D4E2" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M17 10H19C21 10 22 9 22 7V5C22 3 21 2 19 2H17C15 2 14 3 14 5V7C14 9 15 10 17 10Z" stroke="#D0D4E2" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M17 22H19C21 22 22 21 22 19V17C22 15 21 14 19 14H17C15 14 14 15 14 17V19C14 21 15 22 17 22Z" stroke="#D0D4E2" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M5 22H7C9 22 10 21 10 19V17C10 15 9 14 7 14H5C3 14 2 15 2 17V19C2 21 3 22 5 22Z" stroke="#D0D4E2" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+							</g>
+							<defs>
+							<clipPath id="clip0_1196_4865">
+							<rect width="24" height="24" fill="white"/>
+							</clipPath>
+							</defs>
+						</svg> 
+					</button>
+				</div>
+			</div>  
+			<table class="table article-list-table">
+				<thead>
+					<tr>
+						<th>Дата</th>
+						<th>НАИМЕНОВАНИЕ</th>
+						<th>БАЗА ДАННЫХ</th>
+						<th>КВАРТИЛЬ</th>
+						<th>АВТОРЫ</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2023</td>
+						<td>
+							<a href="#">Exploring the Impact of Emotional Intelligence on Leadership Effectiveness in Cross-Cultural Contexts: An Empirical Analysis of Managerial Decision-Making and Performance Outcomes</a>
+						</td>
+						<td>Scopus</td>
+						<td>
+							<span class="quartile">
+								<span class="quartile__caption">Q1</span>
+								<span class="quartile__date">2023</span>
+							</span>
+						</td>
+						<td>
+							<div class="author-marker-link-box">
+								<a href="#" class="author-marker-link author-marker-link--highlight">Обиходова Елизавета Юрьевна</a>
+								<a href="#" class="author-marker-link">Kukartsev V.</a>
+								<a href="#" class="author-marker-link">Kaposhko I.</a>
+								<a href="#" class="author-marker-link">Kartsan I.</a>
+								<a href="#" class="author-marker-link">Иванова М.А.</a>
+								<a href="#" class="author-marker-link">Савушкин П.С</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>2023</td>
+						<td>
+							<a href="#">Lecture Notes in Networks and Systems</a>
+						</td>
+						<td>Scopus</td>
+						<td>
+							<span class="quartile">
+								<span class="quartile__caption">Q1</span>
+								<span class="quartile__date">2021</span>
+							</span>
+							<span class="quartile">
+								<span class="quartile__caption">Q4</span>
+								<span class="quartile__date">2022</span>
+							</span>
+						</td>
+						<td>
+							<div class="author-marker-link-box">
+								<a href="#" class="author-marker-link">Kukartsev V.</a>
+								<a href="#" class="author-marker-link">Kaposhko I.</a>
+								<a href="#" class="author-marker-link">Kaposhko I.</a>
+								<a href="#" class="author-marker-link">Tynchenko V.</a> 
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>2023</td>
+						<td>
+							<a href="#">Exploring the Impact of Emotional Intelligence on Leadership Effectiveness in Cross-Cultural Contexts: An Empirical Analysis of Managerial Decision-Making and Performance Outcomes</a>
+						</td>
+						<td>Scopus</td>
+						<td>
+							<span class="quartile">
+								<span class="quartile__caption">Q1</span>
+								<span class="quartile__date">2023</span>
+							</span>
+						</td>
+						<td>
+							<div class="author-marker-link-box">
+								<a href="#" class="author-marker-link author-marker-link--highlight">Обиходова Елизавета Юрьевна</a>
+								<a href="#" class="author-marker-link">Kukartsev V.</a>
+								<a href="#" class="author-marker-link">Kaposhko I.</a> 
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>2023</td>
+						<td>
+							<a href="#">Lecture Notes in Networks and Systems</a>
+						</td>
+						<td>Scopus</td>
+						<td>
+							<span class="quartile">
+								<span class="quartile__caption">Q1</span>
+								<span class="quartile__date">2021</span>
+							</span>
+							<span class="quartile">
+								<span class="quartile__caption">Q4</span>
+								<span class="quartile__date">2022</span>
+							</span>
+						</td>
+						<td>
+							<div class="author-marker-link-box">
+								<a href="#" class="author-marker-link">Kukartsev V.</a>
+								<a href="#" class="author-marker-link">Kaposhko I.</a>
+								<a href="#" class="author-marker-link">Kaposhko I.</a>
+								<a href="#" class="author-marker-link">Tynchenko V.</a> 
+								<a href="#" class="author-marker-link">Kartsan I.</a> 
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>2023</td>
+						<td>
+							<a href="#">Exploring the Impact of Emotional Intelligence on Leadership Effectiveness in Cross-Cultural Contexts: An Empirical Analysis of Managerial Decision-Making and Performance Outcomes</a>
+						</td>
+						<td>Scopus</td>
+						<td>
+							<span class="quartile">
+								<span class="quartile__caption">Q1</span>
+								<span class="quartile__date">2023</span>
+							</span>
+						</td>
+						<td>
+							<div class="author-marker-link-box">
+								<a href="#" class="author-marker-link author-marker-link--highlight">Обиходова Елизавета Юрьевна</a>
+								<a href="#" class="author-marker-link">Kukartsev V.</a>
+								<a href="#" class="author-marker-link">Kaposhko I.</a>
+								<a href="#" class="author-marker-link">Kartsan I.</a>
+								<a href="#" class="author-marker-link">Иванова М.А.</a>
+								<a href="#" class="author-marker-link">Савушкин П.С</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>2023</td>
+						<td>
+							<a href="#">Lecture Notes in Networks and Systems</a>
+						</td>
+						<td>Scopus</td>
+						<td>
+							<span class="quartile">
+								<span class="quartile__caption">Q1</span>
+								<span class="quartile__date">2021</span>
+							</span>
+							<span class="quartile">
+								<span class="quartile__caption">Q4</span>
+								<span class="quartile__date">2022</span>
+							</span>
+						</td>
+						<td>
+							<div class="author-marker-link-box">
+								<a href="#" class="author-marker-link">Kukartsev V.</a>
+								<a href="#" class="author-marker-link">Kaposhko I.</a> 
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>2023</td>
+						<td>
+							<a href="#">Exploring the Impact of Emotional Intelligence on Leadership Effectiveness in Cross-Cultural Contexts: An Empirical Analysis of Managerial Decision-Making and Performance Outcomes</a>
+						</td>
+						<td>Scopus</td>
+						<td>
+							<span class="quartile">
+								<span class="quartile__caption">Q1</span>
+								<span class="quartile__date">2023</span>
+							</span>
+						</td>
+						<td>
+							<div class="author-marker-link-box">
+								<a href="#" class="author-marker-link author-marker-link--highlight">Обиходова Елизавета Юрьевна</a> 
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<ul class="pagination">
+				<li>
+					<span>
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M12.5 16.6L7.0667 11.1667C6.42503 10.525 6.42503 9.47503 7.0667 8.83336L12.5 3.40002" stroke="#D0D4E2" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg> 
+					</span>
+				</li>
+				<li>
+					<a href="#" class="active">1</a>
+				</li>
+				<li>
+					<a href="#">2</a>
+				</li>
+				<li>
+					<a href="#">3</a>
+				</li>
+				<li>
+					<a href="#">4</a>
+				</li>
+				<li>
+					<a href="#">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M7.4248 16.6L12.8581 11.1667C13.4998 10.525 13.4998 9.47503 12.8581 8.83336L7.4248 3.40002" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg> 
+					</a>
+				</li>
+			</ul>
+		</div>
+	</main>
+	<!-- <footer id="footer">
+    <div class="inner"> 
+         Подвал
+    </div> 
+</footer> -->
+	<div class="great-shadow"></div>
+	<!-- <div class="right-modal">
+		<button class="close-modal-btn">
+			<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M8.99333 8.995L1 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M8.99106 1.00351L1.00439 8.99018" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg> 
+		</button>
+		<div class="right-modal__content">
+			<h2>Классификация проекта</h2>
+			<p>
+				Политическое учение Фомы Аквинского традиционно иллюстрирует марксизм. Политическое учение Аристотеля сохраняет онтологический христианско-демократический национализм.
+			</p>
+		</div> 
+	</div> -->
+
+	<!-- ++++++++++JavaScript++++++++++-->
+	<!-- <script type="text/javascript" src="js/jquery-1.12.1.js"></script> -->
+<!-- <script type="text/javascript" src="./local/templates/lka/js/script.min.js"></script> -->
+<script src="local/templates/portal/js/script.js?v1=9"></script>
+	<!-- ++++++++++JavaScript end++++++++++-->
+</body>
+
+</html>

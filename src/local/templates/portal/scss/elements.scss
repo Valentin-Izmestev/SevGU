@@ -1277,3 +1277,105 @@ a.manage-btn,
 .archive-btn{ 
     background-color: transparent;
 }
+
+.quartile{
+    white-space: nowrap;
+    &:not(:first-child){
+        margin-top: 0.8rem;
+    }
+    .quartile__caption{
+        display: inline-block;
+        margin-right: 0.4rem;
+    
+    }
+    .quartile__date{
+        display: inline-block;
+        color: var(--grey);
+    }
+}
+
+
+.author-marker-link-box{
+    display: block;
+    .author-marker-link{
+        &--limiter{
+            color: var(--dark-blue);
+        }
+    }
+}
+.author-marker-link{
+    display: inline-block;
+    background-color: var(--bg-grey);
+    padding: 0.6rem 1.2rem;
+    margin-bottom: 4px;
+    min-height: 3rem;
+    border-radius: 3.6rem;
+    font-size: 1.5rem;
+    vertical-align: top;
+    transition: var(--great-transition);
+    transition: all 200ms ease;
+    box-sizing: border-box;
+    &--highlight{
+        color: var(--dark-blue);
+    }
+    &--hide{
+        display: none;
+    }
+    &--limiter{
+        color: var(--dark-blue);
+    }
+    &:hover{
+        text-decoration: none;
+        color: var(--dark-blue);
+        
+    }
+}
+.sort-panel{
+    display: flex;
+    align-items: center;
+    margin-top: 2.4rem;
+    margin-bottom: 2rem;
+    border-top: 1px solid #C5CAE9;
+    border-bottom: 1px solid #C5CAE9;
+    padding-right: 2rem;
+    box-sizing: border-box;
+    .output-type-btn-box{
+        margin-left: auto;
+    }
+}
+.output-type-btn-box{
+    display: flex;
+    .output-type-btn{
+        width: 2.4rem;
+        height: 2.4rem;
+        background-color: transparent;
+
+        &:not(:last-child){
+            margin-right: 2.4rem;
+        }
+        svg{
+            path{
+                stroke: var(--light-grey);
+            }
+        }
+        &.active{
+            svg{
+                path{
+                    stroke: var(--grey);
+                }
+            }
+        }
+        .output-type-btn--line{
+        
+        }
+        .output-type-btn--grid{
+            
+        }
+        &:active,
+        &:focus{
+            border: none;
+            outline: none;
+        }
+    }
+
+}

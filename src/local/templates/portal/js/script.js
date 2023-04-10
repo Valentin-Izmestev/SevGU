@@ -91,6 +91,13 @@ function ready() {
 
         });
     }
+
+    let sortSelect =  new Choices('.sort-select', { 
+        placeholder: true,
+        placeholderValue: '',
+        searchEnabled: false,
+    });
+
     let subtaskPoilerBtns = $('.subtask-spoiler__btn');
     subtaskPoilerBtns.on('click', function(){
         let parent = $(this).closest('.subtask-spoiler');
@@ -135,3 +142,34 @@ $(function () {
    $(".phone").mask("+7 (999) 999-99-99");
  
 });
+
+// 
+// 
+// author-marker-link
+
+let arrAuthorMarkerLink = document.querySelectorAll('.article-list-table .author-marker-link-box');
+
+arrAuthorMarkerLink.forEach(item=>{ 
+    if(item.children.length > 4){ 
+        let counter = 0;
+        for(let i = 0; i < item.children.length; i++){
+            counter++; 
+            if(counter > 4){
+                item.children[i].classList.add('author-marker-link--hide');
+            } 
+            
+        } 
+        item.insertAdjacentHTML('beforeend', `<button class="author-marker-link author-marker-link--limiter">Еще + <span>${item.children.length-4}</span></button>`)
+    }
+    item.addEventListener('click', function(e){ 
+        if(e.target.classList.contains('author-marker-link--limiter') || e.target.parentElement.classList.contains('author-marker-link--limiter')){
+             let hideElem = item.querySelectorAll('.author-marker-link--hide');
+             let limiter = item.querySelector('.author-marker-link--limiter');
+             hideElem.forEach(item=>{
+                item.classList.remove('author-marker-link--hide');
+             });
+             limiter.remove();
+        }
+    });
+});
+ 

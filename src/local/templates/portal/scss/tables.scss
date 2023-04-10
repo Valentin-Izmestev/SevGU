@@ -492,3 +492,25 @@ table{
         }
     }
 }
+
+.article-list-table{
+    font-weight: 400;
+    th:nth-child(2){
+        width: 34%;
+    }
+    th:nth-child(3){
+        min-width: 85px;
+    }
+    th:nth-child(4){
+        min-width: 60px;
+    }
+    td:first-child{
+        font-weight: 400;
+    }
+    td:nth-child(2){
+        width: 34%;
+        a{
+            color: var(--dark-blue);
+        }
+    }
+}
